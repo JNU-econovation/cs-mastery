@@ -22,7 +22,10 @@
 * 본인 계정에 `Fork`된 Repository를 로컬 컴퓨터로 `Clone`한다.
 * 자신이 추가하고 싶은 개념을 해당 파일에 추가하거나, 신규 카테고리일 경우 새로운 폴더와 파일을 만든다.
 * 내용은 무조건 **Markdown** 형식으로 작성한다. 관련 툴은 **Typora**가 가장 유명하다.
-* 작성된 내용을 해당 주제의 목차에 추가한다. (README.md 파일의 목차에도 URL을 추가한다.)
+* 작성된 내용을 해당 주제의 목차에 추가하고 네비게이션을 걸어준다. (README.md 파일의 목차에도 URL을 추가한다.)
+
+​       [네비게이션 걸어주는 방법](http://a1010100z.tistory.com/entry/Markdown-%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EC%84%9C-%EB%82%B4%EB%B6%80-%EB%A7%81%ED%81%AC-%EC%9D%B4%EB%8F%99)
+
 * `add`, `commit`, `push`를 한다. 
 * 본인 계정 Repository에서 이 저장소 master Branch로 Pull request를 날린다.
 * 관리자의 승인이 이루어지면 끝
