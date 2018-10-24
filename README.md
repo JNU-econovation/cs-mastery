@@ -35,7 +35,7 @@
 
 
 
-## Algorithm   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Android/Android.md)
+## Algorithm   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Algorithm/Algorithm.md)
 
 ### 목차
 
