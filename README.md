@@ -39,7 +39,9 @@
 
 ### 목차
 
-* 
+* **Brian Kernighan's Algorithm**
+  - **Kernighan은 누구인가**
+  - **알고리즘 설명**
 
 
 
@@ -55,7 +57,9 @@
 
 ### 목차
 
-* 
+* **프로토콜과 OSI 7계층**
+  * **OSI 7계층**
+  * **프로토콜**
 
 
 
@@ -83,11 +87,23 @@
 
 
 
+
+
+## Graphics  [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Graphics/Graphics.md) 
+
+### 목차
+
+- 
+
+
+
 ## Java   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Java/Java.md)
 
 ### 목차
 
-* 
+* **리스트 정렬**
+* **버블 정렬 In Java**
+* **삽입 정렬 In Java**
 
 
 
@@ -95,13 +111,13 @@
 
 ### 목차
 
-- 스프링 개요
-  - 스프링 프레임워크
-  - 스프링 프레임워크 모듈
-  - 스프링 컨테이너
-- DI
-  - DI(Dependency Injection)이란?
-  - 스프링 DI 설정 방법
+- **스프링 개요**
+  - **스프링 프레임워크**
+  - **스프링 프레임워크 모듈**
+  - **스프링 컨테이너**
+- **DI**
+  - **DI(Dependency Injection)이란?**
+  - **스프링 DI 설정 방법**
 
 
 
@@ -136,6 +152,4 @@
 ### 목차
 
 * 
-
-
 
