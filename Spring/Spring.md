@@ -9,6 +9,9 @@
 - [DI](#di)
   - [About DI](#about-di)
   - [스프링 DI 설정 방법](#spring-di-setting)
+- [다양한 의존 객체 주입](#다양한-의존-객체-주입)
+  - [생성자를 이용한 의존 객체 주입](#생성자를-이용한-의존-객체-주입)
+  - [Setter를 이용한 의존 객체 주입](#setter를-이용한-의존-객체-주입)
 
 
 
@@ -116,6 +119,68 @@ public class ElectronicRobotToy {
 - 생성자로 객체를 주입하는 방법과 Setter를 통해 객체를 주입하는 방법이 있다. 생성장로 주입하는 방법은 applicationContext.xml에서 **bean 내부에  Constructor-arg 를 선언**하여 사용하는 방법이 있다.
 - **클래스 구조** : MainClass -> 조립(applicationContext.xml, assembler) -> service 클래스 -> DAO 클래스
 
+
+
+
+
+## 다양한 의존 객체 주입
+
+### 생성자를 이용한 의존 객체 주입
+
+```java
+public StudentRegisterService(StudentDao studentDao) {
+    this.studentDao = studentDao;		
+}
+...// 위의 코드를 applicationContext.xml에 구현하면 아래와 같다.
+<bean id ="studentDao" class="ems.member.dao.StudentDao"></bean>
+<bean id = "registerService" class"ems.member.service.StudentRegisterService">
+	<constructor-arg ref="studentDao"></constructor-arg>
+</bean>
+```
+
+* 객체가 스프링 컨테이너에서 생성이 될 때 argument로 주입이 되면서 생성될 수 있다.
+
+
+
+### Setter를 이용한 의존 객체 주입
+
+```java
+public void setJdbcUrl(String jdbcUrl){
+    this.jdbcUrl = jdbcUrl;
+}
+...// 위의 코드를 applicationContext.xml에 구현하면 아래와 같다.
+<bean id = "dataBaseConnectionInfoDev" class="ems.member.DatabaseConnectionInfo">
+	<property name"jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
+</bean>
+```
+
+* 파라미터가 List 타입이면?
+
+  ```xml
+  <property name="developers">
+  	<list>
+  		<value>Cheney.</value>
+  		<value>Eloy.</value>
+  		<value>Jasper.</value>
+  	</list>
+  <property>
+  ```
+
+하나의 클래스를 가지는 여러가지 Bean이 있을 수 있다. 보통 Dev(개발)용 Real(배포)용으로 두가지 경우가 있을 수 있는데, 이 경우 property를 이용하여 경우를 나눠서 개발할 수 있다.
+
+* 파라미터가 Map 타입이면?
+
+  ```xml
+  <property name="developers">
+  	<map>
+  		<entry>
+  			<key>
+  				<value>cheney</value>
+  			</key>
+  		</entry>
+  	</map>
+  <property>
+  ```
 
 
 
