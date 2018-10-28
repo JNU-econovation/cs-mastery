@@ -45,6 +45,12 @@
 
 
 
+### 도움되는 자료
+
+* [정렬알고리즘 정리](https://medium.com/@fiv3star/%EC%A0%95%EB%A0%AC%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-sorting-algorithm-%EC%A0%95%EB%A6%AC-8ca307269dc7)
+
+
+
 ## Data Structure   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Data%20Structure/Data%20structure.md)
 
 ### 목차
@@ -60,6 +66,12 @@
 * **프로토콜과 OSI 7계층**
   * **OSI 7계층**
   * **프로토콜**
+
+
+
+### 도움되는 자료
+
+* [컴퓨터 네트워크 - 정주홍님](https://brunch.co.kr/@toughrogrammer/16)
 
 
 
@@ -105,7 +117,13 @@
   - [SELECT문](#select문)
     - [기본적인 SELECT 문](#기본적인-select-문)
 
-## 
+
+
+### 도움되는 자료
+
+* [Join과 그에 따른 Slow Query](http://blog.bsmind.co.kr/84)
+
+
 
 
 
@@ -137,17 +155,38 @@
 
 
 
+### 도움되는 자료
+
+* [자바의 새로운 도약: OpenJDK 2018.10.20](http://taewan.kim/post/openjdk/?fbclid=IwAR0YbNB8kau1vhK3rq73dxhTdLWpgtremaqO5DKTtNB1y3xwiY6Gg-PboUw)
+
+* [자바 Heap Space에 관한 내용 - javarevisited](https://javarevisited.blogspot.com/2011/05/java-heap-space-memory-size-jvm.html)
+
+* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)
+
+
+
+
 ## Spring   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Spring/Spring.md)
 
 ### 목차
 
-- **스프링 개요**
-  - **스프링 프레임워크**
-  - **스프링 프레임워크 모듈**
-  - **스프링 컨테이너**
-- **DI**
-  - **DI(Dependency Injection)이란?**
-  - **스프링 DI 설정 방법**
+- [스프링 개요](#스프링-개요)
+  - [스프링 프레임워크](#스프링-프레임워크)
+  - [스프링 프레임워크 모듈](#스프링-프레임워크-모듈)
+  - [스프링 컨테이너](#스프링-컨테이너)
+- [DI](#di)
+  - [About DI](#about-di)
+  - [스프링 DI 설정 방법](#spring-di-setting)
+- [다양한 의존 객체 주입](#다양한-의존-객체-주입)
+  - [생성자를 이용한 의존 객체 주입](#생성자를-이용한-의존-객체-주입)
+  - [Setter를 이용한 의존 객체 주입](#setter를-이용한-의존-객체-주입)
+
+
+
+### 도움되는 자료
+
+* [Spring REST Doc - 김남윤](https://github.com/cheese10yun/springboot-restdocs?fbclid=IwAR1C2dcAcPnh6HyolKi6JNh1WNiCNa4WW3sDReRBHIL2nL__taOWOeH3NCs)
+* [Custom annotation을 이용한 Signal 처리](http://madfordev.tistory.com/1?fbclid=IwAR2IxGPYlznFrRBrBpALq9u7oMHlqXOihyAE-yZvQ9ZfRVgzuHEdfdsZW-E)
 
 
 
@@ -183,3 +222,64 @@
 
 * 
 
+
+
+
+
+---
+
+---
+
+# IT 관련 채용
+
+### 모집중
+
+* 
+
+
+
+### 모집완료
+
+* 
+
+
+
+---
+
+# IT 관련 행사
+
+### 모집중
+
+* [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
+* [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
+
+
+
+###모집완료
+
+*  
+
+
+
+
+
+
+
+---
+
+# 기타 개발 관련 유용한 링크들
+
+* [네이버 개발자 madplay님 블로그](https://blog.naver.com/madplay)
+* [네이버 개발자 occidere님 블로그](https://blog.naver.com/occidere)
+* [God of Java님의 블로그](http://www.tuning-java.com/)
+* [만화로 나누는 자유/오픈소스 소프트웨어 이야기](http://joone.net/2016/11/15/%EC%95%A8%EB%9F%B0-%ED%8A%9C%EB%A7%81%EA%B3%BC-%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C/)
+* [네이버 개발자 wheejuni님 블로그](https://tech.wheejuni.com/)
+* [웹 아키텍쳐 입문 (강추자료)](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
+
+
+
+
+
+## IT 관련 뉴스 모음
+
+* [국감장에서 경쟁 어려움 호소한 이해진](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=277&aid=0004343171&sid1=001&fbclid=IwAR0XTV9J4HoFu4dMvsWnbQ6ANYeHSbv8xWNARICx5mXY6j5vhAX4rOZjmk4)
