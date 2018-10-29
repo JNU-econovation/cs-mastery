@@ -268,7 +268,7 @@
 
 ---
 
-# 기타 개발 관련 유용한 링크들
+# 기타 유용한 링크들
 
 * [네이버 개발자 madplay님 블로그](https://blog.naver.com/madplay)
 * [네이버 개발자 occidere님 블로그](https://blog.naver.com/occidere)
@@ -276,6 +276,7 @@
 * [만화로 나누는 자유/오픈소스 소프트웨어 이야기](http://joone.net/2016/11/15/%EC%95%A8%EB%9F%B0-%ED%8A%9C%EB%A7%81%EA%B3%BC-%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C/)
 * [네이버 개발자 wheejuni님 블로그](https://tech.wheejuni.com/)
 * [웹 아키텍쳐 입문 (강추자료)](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
+* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://github.com/milooy/remote-or-flexible-work-company-in-korea?fbclid=IwAR17ubHcKC9LKk7Oy6maI2fyOwGHbICfWLjlybfpN4Wz37X5jLlYm2jGAWk)
 
 
 
