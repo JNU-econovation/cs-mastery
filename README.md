@@ -34,7 +34,7 @@
 *위 내용이 어렵거나 설명이 필요하신분은 고민하지말고 **이혁진**에게 바로 연락주시기 바랍니다*.
 
 
-
+---
 ## Algorithm   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Algorithm/Algorithm.md)
 
 ### 목차
@@ -127,7 +127,7 @@
 
 
 
-## Design Pattern   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Design%20Pattern/Design%20Pattern.md)
+## Design Pattern   [공부하러 가기](./Design%20Pattern/Design%20Pattern.md)
 
 ### 목차
 
@@ -137,7 +137,7 @@
 
 
 
-## Graphics  [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Graphics/Graphics.md) 
+## Graphics  [공부하러 가기](./Graphics/Graphics.md) 
 
 ### 목차
 
@@ -145,10 +145,11 @@
 
 
 
-## Java   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Java/Java.md)
+## Java   [공부하러 가기](./Java/Java.md)
 
 ### 목차
 
+* **JVM의 메모리 구조**
 * **리스트 정렬**
 * **버블 정렬 In Java**
 * **삽입 정렬 In Java**
@@ -166,7 +167,7 @@
 
 
 
-## Spring   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Spring/Spring.md)
+## Spring   [공부하러 가기](./Spring/Spring.md)
 
 ### 목차
 
@@ -190,7 +191,7 @@
 
 
 
-## Web   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Web/Web.md)
+## Web   [공부하러 가기](./Web/Web.md)
 
 ### 목차
 
@@ -198,7 +199,7 @@
 
 
 
-## Android   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Android/Android.md)
+## Android   [공부하러 가기](./Android/Android.md)
 
 ### 목차
 
@@ -208,7 +209,7 @@
 
 
 
-## C++   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/C++/C++.md)
+## C++   [공부하러 가기](./C++/C++.md)
 
 ### 목차
 
@@ -216,7 +217,7 @@
 
 
 
-## Unity   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Unity/Unity.md)
+## Unity   [공부하러 가기](./Unity/Unity.md)
 
 ### 목차
 
@@ -255,7 +256,7 @@
 
 
 
-###모집완료
+### 모집완료
 
 *  
 
@@ -284,3 +285,7 @@
 ## IT 관련 뉴스 모음
 
 * [국감장에서 경쟁 어려움 호소한 이해진](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=277&aid=0004343171&sid1=001&fbclid=IwAR0XTV9J4HoFu4dMvsWnbQ6ANYeHSbv8xWNARICx5mXY6j5vhAX4rOZjmk4)
+
+---
+# 개발자 면접 질문 리스트
+* [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
