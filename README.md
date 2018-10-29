@@ -127,7 +127,7 @@
 
 
 
-## Design Pattern   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Design%20Pattern/Design%20Pattern.md)
+## Design Pattern   [공부하러 가기](./Design%20Pattern/Design%20Pattern.md)
 
 ### 목차
 
@@ -137,7 +137,7 @@
 
 
 
-## Graphics  [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Graphics/Graphics.md) 
+## Graphics  [공부하러 가기](./Graphics/Graphics.md) 
 
 ### 목차
 
@@ -167,7 +167,7 @@
 
 
 
-## Spring   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Spring/Spring.md)
+## Spring   [공부하러 가기](./Spring/Spring.md)
 
 ### 목차
 
@@ -191,7 +191,7 @@
 
 
 
-## Web   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Web/Web.md)
+## Web   [공부하러 가기](./Web/Web.md)
 
 ### 목차
 
@@ -199,7 +199,7 @@
 
 
 
-## Android   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Android/Android.md)
+## Android   [공부하러 가기](./Android/Android.md)
 
 ### 목차
 
@@ -209,7 +209,7 @@
 
 
 
-## C++   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/C++/C++.md)
+## C++   [공부하러 가기](./C++/C++.md)
 
 ### 목차
 
@@ -217,7 +217,7 @@
 
 
 
-## Unity   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Unity/Unity.md)
+## Unity   [공부하러 가기](./Unity/Unity.md)
 
 ### 목차
 
