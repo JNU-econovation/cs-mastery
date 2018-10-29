@@ -34,7 +34,7 @@
 *위 내용이 어렵거나 설명이 필요하신분은 고민하지말고 **이혁진**에게 바로 연락주시기 바랍니다*.
 
 
-
+---
 ## Algorithm   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Algorithm/Algorithm.md)
 
 ### 목차
@@ -284,3 +284,7 @@
 ## IT 관련 뉴스 모음
 
 * [국감장에서 경쟁 어려움 호소한 이해진](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=277&aid=0004343171&sid1=001&fbclid=IwAR0XTV9J4HoFu4dMvsWnbQ6ANYeHSbv8xWNARICx5mXY6j5vhAX4rOZjmk4)
+
+---
+# 개발자 면접 질문 리스트
+* [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
