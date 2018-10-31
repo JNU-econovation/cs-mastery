@@ -33,7 +33,6 @@
 
 *위 내용이 어렵거나 설명이 필요하신분은 고민하지말고 **이혁진**에게 바로 연락주시기 바랍니다*.
 
-
 ---
 ## Algorithm   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Algorithm/Algorithm.md)
 
@@ -72,6 +71,7 @@
 ### 도움되는 자료
 
 * [컴퓨터 네트워크 - 정주홍님](https://brunch.co.kr/@toughrogrammer/16)
+* [프록시 서버란 무엇인가](http://brownbears.tistory.com/191)
 
 
 
@@ -188,6 +188,7 @@
 
 * [Spring REST Doc - 김남윤](https://github.com/cheese10yun/springboot-restdocs?fbclid=IwAR1C2dcAcPnh6HyolKi6JNh1WNiCNa4WW3sDReRBHIL2nL__taOWOeH3NCs)
 * [Custom annotation을 이용한 Signal 처리](http://madfordev.tistory.com/1?fbclid=IwAR2IxGPYlznFrRBrBpALq9u7oMHlqXOihyAE-yZvQ9ZfRVgzuHEdfdsZW-E)
+* [스프링 IoC 설명 (강추)](http://kamang-it.tistory.com/entry/Spring-01IoC?category=712768)
 
 
 
@@ -277,6 +278,7 @@
 * [네이버 개발자 wheejuni님 블로그](https://tech.wheejuni.com/)
 * [웹 아키텍쳐 입문 (강추자료)](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
 * [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://github.com/milooy/remote-or-flexible-work-company-in-korea?fbclid=IwAR17ubHcKC9LKk7Oy6maI2fyOwGHbICfWLjlybfpN4Wz37X5jLlYm2jGAWk)
+* [신입 개발자 생활백서 - 진유림님](https://www.slideshare.net/jayjin0427/ss-71896768)
 
 
 
@@ -289,3 +291,5 @@
 ---
 # 개발자 면접 질문 리스트
 * [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
+* [면접 관련 라이브 코딩 유튜브 (강추)](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg)
+
