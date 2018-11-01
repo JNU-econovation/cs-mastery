@@ -3,8 +3,8 @@
 ### 목차
 
 * [프레임워크와 라이브러리의 차이점](#프레임워크와-라이브러리의-차이점)
-
 * [JVM의 메모리 구조](#jvm의-메모리-구조)
+* [가비지 콜렉터(GC)](#가비지-콜렉터)
 * [리스트 정렬](#리스트-정렬)
 * [버블 정렬 In Java](#버블-정렬-알고리즘)
 * [삽입 정렬 In Java](#삽입-정렬-알고리즘)
@@ -58,6 +58,116 @@
 - `A a = new A()`라고 객체를 생성했다면 실제 객체는 힙영역에 참조변수인 a와 힙영역의 주소는 스택에 저장된다.
 - **가비지 콜렉터** 더이상 힙영역의 객체가 참조되지 않는다면 힙영역에서 삭제해 주어야한다. 자바를 가비지콜렉터라는 기능으로 자동으로 실행해준다.
 - 효율적인 힙관리를 위해 힙은 여러단개로 구성되어 있다.(가비지 콜렉터와 관련되어 있으므로 가비지 콜렉터에서 더 자세히 설명하도록 힌다.)  
+
+
+## 가비지 콜렉터  
+
+### 가비지 콜렉터(GC)란
+
+> 메모리를 관리하는 로직
+
+* 객체가 생성되면 힙영역의 메모리를 점유한다. 후에 객체의 참조가 끊기면, 이 객체는 다시 사용할 수 없기 때문에 메모리에서 제거해 주어야 한다. 이 기능을 수행하는 것이 가비지 콜렉터이다.
+* GC가 작동하게 되면 실행중인 모든 쓰레드가 중지되고, GC 쓰레드만 작동하게 된다. 따라서 GC는 프로그램의 성능과 관련되기 때문에 잘 관리해 주어야 한다.
+
+
+
+### GC의 기본 동작방식
+
+* **추적 기반 쓰레기 수집**(대표: mark-and-sweep)
+  * 모든 메모리를 확인하여 접근이 가능한 메모리에 마킹한다.
+  * 마킹이 안된 곳의 제거 한다
+  * 빈 공간을 압축한다
+* 마킹이 끝나고 쓰레드가 작동하면 다시 마킹을 해야하기 때문에, 모든 쓰레드의 동작을 멈춘다. 이를 **stop-the-world**라 한다. 이 경우에 실시간 동작 같은경우 끊기는 현상이 발생하는 등 성능에 좋지 않다. 
+
+
+
+
+
+![jvm_heap](../src/jvm_heap.jpg)
+
+
+
+### 힙 메모리
+
+* 객체는 참조가 매우 적다. 또한 대부분의 객체는 금방 참조가 불가능한 상태가된다. 이러한 성질을 이용해서 힙 메모리를 **Young과 Old**로 구별한다.
+* Young에서 살아남은 객체들을 Old로 옮기고  각 영역별로 다른 방식과 빈도수로 GC를 작동한다. 
+  * Young Generation 영역 : 대체로 old 영역보다 크기가 작아 자주 GC가 발생하며 Minor GC라고 한다.
+  * Old Generation 영역 : young 영역보다 크게 할당되며 GC가 적게 발생한다. Major 혹은 Full GC라고 한다.
+* 좀더 구체적인 영역이 존재하지만 GC와 밀접한 관계가 있는 영역만 설명하도록 하겠다.
+
+
+
+### Young 영역
+
+* Young 영역은 다시 Eden과 2개의 Survivor 여역으로 나누어진다. (메모리 영역이 작기 때문에 GC가 빠르다)
+* 처음 객체개 생성되면 Eden에 위치한다.
+* Eden 영역에서 GC가 이루어지면 살아남은 객체는 Survivor의 빈곳으로 이동한다.
+* Survivor가 가득차게 되면 여기서 살아남은 객체는 나머지 한 곳으로 옮겨지고 현재 Survivor영역은 완전히 빈상태가된다.
+* 이 상황이 반복되며 계속 살아남은 객체는 Old 영역으로 옮겨진다.
+* Survivor의 둘중 한곳은 항상 완전히 비어있는 상태가 되어야한다.(왜일까?)
+
+
+
+### Old 영역
+
+ Old 영역도 기본적으로 데이터가 가득차면 GC를 싱행하게 된다. JDK 7을 기준으로 5가지 방식이 존재한다. Old 영역은 크기가 크기 때문에 다양한 GC 방식으로 애플리케이션에 맞춰 GC 시간을 최소화 하여야 한다.
+
+ - Serial GC
+ - Parallel Gc
+ - Parallel Old GC
+ - Concurrent Mark & Sweep GC
+ - G1(Garbage First) GC
+
+
+
+### GC 알고리즘
+
+#### 1. Serial Garbage Collector
+
+ 싱글 프로세스 환경에서 사용된다. 가장 일반적으로 Old 영역 전체에 Mark - Sweep - Compaction 과정을 거친다. Compaction은 GC후 메모리를 빈곳을 압축하는 과정 이다.
+
+
+
+#### 2. Parallel Garbage Collector
+
+ 전체적인 알고리즘은 Serial GC와 같다. 차이점은 GC를 처리하는 스레드를 여러개 두는 것이다. 메모리가 충분하고 다중코어 환경에서 사용된다.
+
+
+
+#### 3. Parallel Old Garbage Collector
+
+ Parallel GC와 같지만, Old 영역에 대해서 Mark-Summary-Compaction 단계를 거친다. ~~Mark-summary-Compaction의 과정은 찾지 못하였다. 상대적으로 덜 중요한 것이 아닌가 싶다.~~
+
+
+
+
+
+![Cms](../src/GC_Cms.png)
+
+
+
+#### 4. CMS(Concurrent-mark-sweep) Garbage Collector
+
+ CMS는 Mark하는 과정중 처음 사용되지 않는 객체를 찾기 되면 STW 상황에서 벗어난다. 때문에 STW가 매우 짧다 이후에 다른 쓰레드와 동시에 Mark 작업이 이루어진다. 모든 Mark작업이 끝다면 두번째 STW 이 진행되면 동시에 진행되는 과정에서 사용된 객체에 대해서 remark가 된다. 두번째 STW가 끝나면 Sweep과정 또한 동시에 진행된다. Parallel GC와 비요하여 불리한점은 쓰레드의 연속적인 작업을 위해 더 많은 cpu가 사용된다는 점이다. 때문에 어플리케이션 프리즈에 불리한 long-running server에 좋다.  
+
+<br/>
+
+#### 5. G1 Collector
+
+ G1(Garbage first) Collector는 JDK7에서 소개 되었다. G1 Collector는 여러개의 백그라운드 스레드를 사용하여 힙을 스캔하여 영역을 분할한다. 그리고 쓰레기(참조할 수 없는 객체)가 많은 영역을 먼저 스캔하도록 설계되어 있다. 이러한 방법은 힙이 가득차 STW를 실행하기 전에 쓰레기를 수집하도록 해준다.
+
+
+
+**참고 자료**  
+
+[나무위키 - GC](https://namu.wiki/w/%EC%93%B0%EB%A0%88%EA%B8%B0%20%EC%88%98%EC%A7%91)  
+
+[12bme블로그](https://12bme.tistory.com/57)
+
+[naverD2-Java Garbage Collection](https://d2.naver.com/helloworld/1329)
+
+https://blog.takipi.com/garbage-collectors-serial-vs-parallel-vs-cms-vs-the-g1-and-whats-new-in-java-8/
+
 
 ### JVM 메모리 구조 설명충 버전
 
