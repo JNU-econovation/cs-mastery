@@ -294,11 +294,11 @@
 * [만화로 나누는 자유/오픈소스 소프트웨어 이야기](http://joone.net/2016/11/15/%EC%95%A8%EB%9F%B0-%ED%8A%9C%EB%A7%81%EA%B3%BC-%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C/)
 * [네이버 개발자 wheejuni님 블로그](https://tech.wheejuni.com/)
 * [웹 아키텍쳐 입문 (강추자료)](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
-* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://github.com/milooy/remote-or-flexible-work-company-in-korea?fbclid=IwAR17ubHcKC9LKk7Oy6maI2fyOwGHbICfWLjlybfpN4Wz37X5jLlYm2jGAWk)
+* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://milooy.github.io/remote-or-flexible-work-company-in-korea/?fbclid=IwAR0MWKFP3Kx4Dbe1SIGOMCytppUffHJrJuvdFcwVUYwwilphWwM5FmGwd-w)
 * [신입 개발자 생활백서 - 진유림님](https://www.slideshare.net/jayjin0427/ss-71896768)
 * [나는 어떻게 개발 공부를 했나, 2편 - 한재엽님](https://medium.com/@Jbee_/%EB%82%98%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EB%B0%9C-%EA%B3%B5%EB%B6%80%EB%A5%BC-%ED%96%88%EB%82%98-2%ED%8E%B8-267a7ee108dc)
-
-
+* [NodeJS는 어떻게 동작하는가?](http://sjh836.tistory.com/149?fbclid=IwAR13fEYP2-8GGaY_gzN8div8bJTIwSx5jGGwpQgVjv_knkF6YkPvx6lkeQo)
+* [대학생 벤처 IT 창업 동아리 SOPT의 페이스북](https://www.facebook.com/clubsopt/?eid=ARBAVCICtwddt-huwmxZjPe2b2G32SqYLC56SUztnUjUgIQ20Y1pdk26BdP-7yrMuJboHepPjaZYbnev&timeline_context_item_type=intro_card_work&timeline_context_item_source=100008576712721)
 
 
 
