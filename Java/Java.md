@@ -253,6 +253,34 @@ Collections.sort(numbers, new ReverseNumber());
 
 **정렬 완료**
 
+* compare의 return 값에 대하여 알아보자
+    * return 값은 -1, 0, 1이 있다.
+    * return 값으로 -1이 주어진다면 첫번째 매개변수가 더 작다는 의미이다. (기본 o1-o2) 즉 첫번째 매개변수가 앞으로 오게 된다. 0은 두수가 같은 경우, 1은 첫번째 매개변수가 더 큰 경우이다.
+    * 때문에 o2-o1을 리턴하게 되면 o2가 더 클때 1을 리턴하게 된다. 1이 리턴된다는 것은 첫번째 매개변수가 더 크다는 의미이다. 그래서 실제는 o2가 더 크지만 역순으로 정렬이 되는 것이다.
+    * 두 매개변수가 같을 떼(0을 리턴할 때) 두 매개변수의 순서를 변경하거나 변경하지 않을 수 있다.
+    * 이를 이용하여 2번째 조건을 줄 수 있다.
+    * 스트링의 길이를 오름차순으로 정렬하고 길이가 같다면 사전순으로 정렬하라는 정렬을 만들 수 있다.
+    
+```java
+    public void test(){
+        String[] a = {"aaa", "bbb", "c"};
+
+        Arrays.stream(a).forEach(s -> System.out.print(s+" "));
+        Arrays.sort(a, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                int length1 = o1.length();
+                int length2 = o2.length();
+                if (length1 == length2){  // 스트링의 길이가 스트링에 정의된 compareTo를 사용한다.
+                    return o1.compareTo(o2);
+                }
+                return length1 - length2; // 스트링의 길이가 같지 않다면 스트링의 크기로 정렬한다.
+            }
+        });
+
+        Arrays.stream(a).forEach(s -> System.out.print(s+" "));
+    }
+```
 
 
 
