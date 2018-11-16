@@ -8,6 +8,7 @@
 * [리스트 정렬](#리스트-정렬)
 * [버블 정렬 In Java](#버블-정렬-알고리즘)
 * [삽입 정렬 In Java](#삽입-정렬-알고리즘)
+* [알고리즘에서 사용되는 입출력](#-알고리즘에서-사용되는-입출력-bufferedreader)
 
 
 
@@ -18,12 +19,28 @@
 ## 프레임워크와 라이브러리의 차이점 
 
 : 자동차와 망치라고 표현하면 편하다고 한다. 자동차는 특정 목적으로 만들어져서 목적지로 빠르게 갈 수 있는 역할만 하지만, 망치는 두드린다는 행위 하나로 사람을 때릴때도 쓸 수 있고, 못질을 할 때 쓸수있고 필요에 따라 갖다가 쓸 수 있다. 자동차를 가지고 삽질을 할 수 없고 무언가를 두들길 수도 없다. 그저 목적지까지 빠르게 데려다주는 수단일 뿐이다. 만들어질 때부터 이러한 용도로 만들어졌기 때문에 그렇다. 메뉴얼대로 조작하면 최고의 효율로 목적지까지 데려다주는게 프레임워크다. 하지만 망치는 용도에 따라 여러가지 형태로 쓰일 수 있다. 정말 잘 비유해 놓은 것 같다. 즉 프레임워크는 라이브러리와는 다르게 프로그래밍 규칙이 이미 정해져있는 것이다. 재엽님은 여기서 한 발 더 나아가서 언어를 배우는 것은 어떻게 비유할 수 있을 것인가? 에 대한 물음을 던지셨고, 스스로 사지를 움직일 수 있게 하는 것이라고 정의 내리셨다. 더 나아가서 토비의 스프링을 보면 좋은 구절이 나온다고 한다. 프레임워크는 제어의 역전이 적용된 좋은 예이다. 개발자가 짠 애플리케이션 코드가 프레임워크에 의해 사용되고, 라이브러리는 개발자가 짠 애플리케이션 코드에서 라이브러리를 사용하는 것이다. 즉 제어하는 쪽이 역전되었다고 할 수 있다.
+  
+---  
+<br>  
+
+## JAVA의 장점
+ 1. 운영체제에 독립적이다.
+    - 자바 프로그램은 JVM이라는 자바 가상머신 위에서 돌아갑니다. 때문에 어떤 운영체제에서도 JVM만 설치되어 있다면 실행이 가능합니다.
+    
+ 2. 객체 지향언어이다.
+    - 추상화, 상속, 캡슐화 등의 객체지향언어의 특징을 가지고 있다. 때문에 코드의 재사용성과 유지보수가 편리하다
+    
+ 3. GarbageCollector 가 메모리 관리를 해준다.
+    - GC가 더이상 참조되지 않은 메모리에 대해서 관리해준다. 
+    
+ 4. 동적로딩이 가능하다.
+    - 자바로 작성된 Application은 여러개의 class로 구성되어 있다. JVM에서는 필요한 Class만 로딩하는데 때문에 사용되지 않은 일부 클래스를 변경하게되면, 전체 어플리케이션을 다시 컴파일 하지 않아도 된다.  
+        
+        
+<br>   
 
 
 
-
-
----
 
 
 ## JVM의 메모리 구조
@@ -253,6 +270,34 @@ Collections.sort(numbers, new ReverseNumber());
 
 **정렬 완료**
 
+* compare의 return 값에 대하여 알아보자
+    * return 값은 -1, 0, 1이 있다.
+    * return 값으로 -1이 주어진다면 첫번째 매개변수가 더 작다는 의미이다. (기본 o1-o2) 즉 첫번째 매개변수가 앞으로 오게 된다. 0은 두수가 같은 경우, 1은 첫번째 매개변수가 더 큰 경우이다.
+    * 때문에 o2-o1을 리턴하게 되면 o2가 더 클때 1을 리턴하게 된다. 1이 리턴된다는 것은 첫번째 매개변수가 더 크다는 의미이다. 그래서 실제는 o2가 더 크지만 역순으로 정렬이 되는 것이다.
+    * 두 매개변수가 같을 떼(0을 리턴할 때) 두 매개변수의 순서를 변경하거나 변경하지 않을 수 있다.
+    * 이를 이용하여 2번째 조건을 줄 수 있다.
+    * 스트링의 길이를 오름차순으로 정렬하고 길이가 같다면 사전순으로 정렬하라는 정렬을 만들 수 있다.
+    
+```java
+    public void test(){
+        String[] a = {"aaa", "bbb", "c"};
+
+        Arrays.stream(a).forEach(s -> System.out.print(s+" "));
+        Arrays.sort(a, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                int length1 = o1.length();
+                int length2 = o2.length();
+                if (length1 == length2){  // 스트링의 길이가 스트링에 정의된 compareTo를 사용한다.
+                    return o1.compareTo(o2);
+                }
+                return length1 - length2; // 스트링의 길이가 같지 않다면 스트링의 크기로 정렬한다.
+            }
+        });
+
+        Arrays.stream(a).forEach(s -> System.out.print(s+" "));
+    }
+```
 
 
 
@@ -309,3 +354,96 @@ public List<Integer> insertSort(List<Integer> numbers){
 
 originalList를 continue 하게 되면, 아래 sortedList를 실행시키지 않는다. break와의 차이점이다. 오랜만에 이 문법을 보게 되었다. 잘 기억해두면 이렇게 유용하게 쓰일 수 있을 것 같다.
 
+---
+
+# 알고리즘에서 사용되는 입출력 BufferedReader
+
+- 자바에서 사용되는 입력 받는 방법에 대해서 알아보자. 알고리즘을 풀 때 Scanner를 사용하면 입력이 느린경우가 있다. 최적하를 위해서 어떤 방법이 있는지 알아보자.
+
+## Scanner
+
+```java
+Scanner sc = new Scanner( System.in );
+int T = sc.nextInt();
+```
+
+ 자바에서 가장 흔하게 입력받는 방법이다. nextInt()의 경우 개행문자를 받지 않기 때문에 입력받을 때 신경써주어야 한다.
+
+
+
+## BufferedReader
+
+```java
+BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
+int T = Integer.parseInt( br.readLine());
+```
+
+ BufferedReader의 사용법이다. 기본적으로 스트링값으로 받아오기 때문에 원시형의 변형이 필요하다.
+
+
+
+## StringTokenizner
+
+ Scanner를 사용하면 nextInt()를 이용해서 공백으로 구분된 int를 가져올 수 있지만 BufferedReader는 불가능 하기 때문에 Tokenizer를 통해서 delimiter를 설정해 주어야 한다.
+
+```
+StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+
+int T = Integer.parseInt( st.nextToken() );
+int N = Integer.parseInt( st.nextToken() );
+```
+
+ 생성자의 첫번째 매개변수는 String값이다. 두번째는 delimiter인데 기본의 공백으로 주어져있기 때문에 공백 문자열을 받아오려면 매개변수 하나만 보내면된다. 구분된 문자열은 nextToken()함수로 불러올 수 있다. 역시 스트링값을 반환하기 때문에 알맞은 원시형으로 변환해 주어야 한다.
+
+ hasMoreToken() 메소들를 활용하면, while문을 통해 문자토큰이 끝날 때 까지 반복문을 작성할 수 있다. 
+
+
+
+## BufferedWriter
+
+ BufferedReader와 비슷하다. System.out.println()과는 다르게 개행되지 않기때문에 개행하고 싶다면 `\n`을 마지막에 넣어주면 된다.
+
+
+
+```java
+BufferedWriter bw = new BufferedWriter( new OutputStreamWriter(System.out));
+bw.Write("Hello World\n");
+bw.flush();
+bw.close();
+```
+
+
+
+ flush()는 스트림에 남아있을 수 있는 문자를 빼는 역할을 한다.  bw는 다 사용했다면 꼭 close()를 하도록 하자.
+
+
+
+## 차이점
+
+1. Scanner의 버퍼크기는 1024 chars이고 BufferReader의 크기는 8192 chars 이다.
+2. BufferedReader는 문자열을 단순히 읽고, Scanner는 구분하는 메소드가 정의 되어 있다.
+3. BufferReader는 동기화가 된다.
+4. BufferedReader는 IOException 예외를 던진다.
+
+[참조 : 마이구미 블로그](http://mygumi.tistory.com/43)
+
+
+
+- 스캐너가 비교적 나중에 나온 것이기 때문에 다양한 메소드가 있지만, 느리다.
+- 큰 파일을 읽을 때는 BufferedReader가 좋다.
+- Scanner는 StringTokenizer 대신 userDelimiter를 사용할 수 있다.
+- BufferedReader는 예외를 던지기 때문에 처리해 주어야한다.
+
+   
+
+## 성능차이를 알아보자
+
+BufferedReader에 매개변수로 들어가는 InpuStreamReader는 문자열을 Chracter 단위(한글자)로 읽어 들어온다. 때문에 긴 문자열을 읽어 들일 때 불편하다.
+
+BufferedReader는 버퍼를 사용하여 이러한 불편함을 제거한다. 요청이 있을때 마다 읽어오는 것이 아니라, 한번에 버퍼에 저장한후 요청이 있으면 버퍼에서 읽어오는 방식이다. 공백도 문자열로 인식하여 받는다.
+
+반면 Scanner는 공백과 줄바꿈을 모두 입력의 경계로 인식한다. 때문에 데이터를 쉽게 입력받을 수 있다.  또한 데이터 타입이 입력 받는 시점에서 결정되기 때문에 Casting이 필요하지 않는다.(함수 사용)
+
+
+
+상황에 맞게 사용하면 되겠다.!
