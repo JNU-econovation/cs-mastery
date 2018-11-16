@@ -180,6 +180,8 @@
 
 ### 목차
 
+* [ORM, JPA, Hibernate의 차이점](orm,-jpa,-hiberbate의-차이점)
+
 - [스프링 개요](#스프링-개요)
   - [스프링 프레임워크](#스프링-프레임워크)
   - [스프링 프레임워크 모듈](#스프링-프레임워크-모듈)
@@ -268,15 +270,13 @@
 
 ### 모집중
 
-* [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
-* [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
-* [개발자 커리어 티치](https://innovationlab181114seminar.splashthat.com/?fbclid=IwAR2uFDhMU6dHPxROXV45zp4xmCIPtXJ_IaQStpDGpqM8AgVWg7WZ26o3jd4)
-
-
+* 
 
 ### 모집완료
 
-*  
+*  [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
+*  [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
+*  [개발자 커리어 티치](https://innovationlab181114seminar.splashthat.com/?fbclid=IwAR2uFDhMU6dHPxROXV45zp4xmCIPtXJ_IaQStpDGpqM8AgVWg7WZ26o3jd4)
 
 
 
@@ -299,6 +299,8 @@
 * [나는 어떻게 개발 공부를 했나, 2편 - 한재엽님](https://medium.com/@Jbee_/%EB%82%98%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EB%B0%9C-%EA%B3%B5%EB%B6%80%EB%A5%BC-%ED%96%88%EB%82%98-2%ED%8E%B8-267a7ee108dc)
 * [NodeJS는 어떻게 동작하는가?](http://sjh836.tistory.com/149?fbclid=IwAR13fEYP2-8GGaY_gzN8div8bJTIwSx5jGGwpQgVjv_knkF6YkPvx6lkeQo)
 * [대학생 벤처 IT 창업 동아리 SOPT의 페이스북](https://www.facebook.com/clubsopt/?eid=ARBAVCICtwddt-huwmxZjPe2b2G32SqYLC56SUztnUjUgIQ20Y1pdk26BdP-7yrMuJboHepPjaZYbnev&timeline_context_item_type=intro_card_work&timeline_context_item_source=100008576712721)
+* [개발자를 위한 인프라 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/?fbclid=IwAR1cGQtBdkEzkEqedrQ1WIykqSYCQPrd-LYCL0BaTzWfbXY0oNkBkCZ45Lo)
+* [학습에 관한 좋은 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html?fbclid=IwAR2s7C6QgmbaBoDnyZDqEwNHe1rncMCDBEsWjmf4yvh94C-i0sqRmiAZHjM)
 
 
 
@@ -310,4 +312,5 @@
 # 개발자 면접 질문 리스트
 * [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
 * [면접 관련 라이브 코딩 유튜브 (강추)](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg)
+* [안드로이드 개발자 면접 질문 리스트](https://github.com/BearCola/ForJavaAndAndroidInterview/blob/master/README.md)
 
