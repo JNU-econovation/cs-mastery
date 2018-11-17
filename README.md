@@ -301,6 +301,7 @@
 * [대학생 벤처 IT 창업 동아리 SOPT의 페이스북](https://www.facebook.com/clubsopt/?eid=ARBAVCICtwddt-huwmxZjPe2b2G32SqYLC56SUztnUjUgIQ20Y1pdk26BdP-7yrMuJboHepPjaZYbnev&timeline_context_item_type=intro_card_work&timeline_context_item_source=100008576712721)
 * [개발자를 위한 인프라 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/?fbclid=IwAR1cGQtBdkEzkEqedrQ1WIykqSYCQPrd-LYCL0BaTzWfbXY0oNkBkCZ45Lo)
 * [학습에 관한 좋은 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html?fbclid=IwAR2s7C6QgmbaBoDnyZDqEwNHe1rncMCDBEsWjmf4yvh94C-i0sqRmiAZHjM)
+* [클린코드 책 요약](https://sungjk.github.io/2017/07/27/clean-code.html?fbclid=IwAR3PFD-p5_qTNnnDCdQgQadoCflFwqtMmXZRzlsMcbhh_Q6NTLwcLANpmWo)
 
 
 
