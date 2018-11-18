@@ -154,21 +154,30 @@
 * **리스트 정렬**
 * **버블 정렬 In Java**
 * **삽입 정렬 In Java**
-* **알고리즘에서 사용되는 입출력 BufferedReader**
+* **알고리즘에서 사용되는 입출력 BufferedReader**  
+  
+  
+## Java DesignPattern [공부하러 가기](./Java/DesignPattern.md)  
 
+### 목차
 
+* **빌더 패턴**  
+  
+  
+---  
 ### 도움되는 자료
 
 * [자바의 새로운 도약: OpenJDK 2018.10.20](http://taewan.kim/post/openjdk/?fbclid=IwAR0YbNB8kau1vhK3rq73dxhTdLWpgtremaqO5DKTtNB1y3xwiY6Gg-PboUw)
 
 * [자바 Heap Space에 관한 내용 - javarevisited](https://javarevisited.blogspot.com/2011/05/java-heap-space-memory-size-jvm.html)
 
-* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)
-
-
-
-
-## Spring   [공부하러 가기](./Spring/Spring.md)
+* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)   
+    
+    
+---  
+   
+   
+## Spring   [공부하러 가기](./Spring/Spring.md)  
 
 ### 목차
 
