@@ -163,8 +163,18 @@
 * **버블 정렬 In Java**
 * **삽입 정렬 In Java**
 * **알고리즘에서 사용되는 입출력 BufferedReader**
+* **equals() vs hashCode()**  
 
+  
+  
+## Java DesignPattern [공부하러 가기](./Java/DesignPattern.md)  
 
+### 목차
+
+* **빌더 패턴**  
+  
+  
+---  
 ### 도움되는 자료
 
 * [자바의 새로운 도약: OpenJDK 2018.10.20](http://taewan.kim/post/openjdk/?fbclid=IwAR0YbNB8kau1vhK3rq73dxhTdLWpgtremaqO5DKTtNB1y3xwiY6Gg-PboUw)
@@ -173,10 +183,6 @@
 * [final 키워드와 퍼포먼스](http://korprogrammingresearch.blogspot.com/)
 * [자바 가비지 컬렉터](https://free-strings.blogspot.com/2016/02/jvm-garbage-collector.html)
 
-
-
-
-## Spring   [공부하러 가기](./Spring/Spring.md)
 
 ### 목차
 

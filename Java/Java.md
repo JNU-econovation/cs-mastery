@@ -3,6 +3,7 @@
 ### 목차
 
 * [프레임워크와 라이브러리의 차이점](#프레임워크와-라이브러리의-차이점)
+* [Java의 장점](#java의_장점)
 * [JVM의 메모리 구조](#jvm의-메모리-구조)
 * [가비지 콜렉터(GC)](#가비지-콜렉터)
 * [리스트 정렬](#리스트-정렬)
@@ -10,14 +11,12 @@
 * [삽입 정렬 In Java](#삽입-정렬-알고리즘)
 * [알고리즘에서 사용되는 입출력](#-알고리즘에서-사용되는-입출력-bufferedreader)
 * [인터페이스와 추상클래스](#인터페이스와-추상클래스)
-
-
-
-
+* [equals() vs hashCode()](#equals()_vs_hashcode())  
 
 ---
-
-## 프레임워크와 라이브러리의 차이점 
+<br>  
+  
+## 프레임워크와 라이브러리의 차이점   
 
 : 자동차와 망치라고 표현하면 편하다고 한다. 자동차는 특정 목적으로 만들어져서 목적지로 빠르게 갈 수 있는 역할만 하지만, 망치는 두드린다는 행위 하나로 사람을 때릴때도 쓸 수 있고, 못질을 할 때 쓸수있고 필요에 따라 갖다가 쓸 수 있다. 자동차를 가지고 삽질을 할 수 없고 무언가를 두들길 수도 없다. 그저 목적지까지 빠르게 데려다주는 수단일 뿐이다. 만들어질 때부터 이러한 용도로 만들어졌기 때문에 그렇다. 메뉴얼대로 조작하면 최고의 효율로 목적지까지 데려다주는게 프레임워크다. 하지만 망치는 용도에 따라 여러가지 형태로 쓰일 수 있다. 정말 잘 비유해 놓은 것 같다. 즉 프레임워크는 라이브러리와는 다르게 프로그래밍 규칙이 이미 정해져있는 것이다. 재엽님은 여기서 한 발 더 나아가서 언어를 배우는 것은 어떻게 비유할 수 있을 것인가? 에 대한 물음을 던지셨고, 스스로 사지를 움직일 수 있게 하는 것이라고 정의 내리셨다. 더 나아가서 토비의 스프링을 보면 좋은 구절이 나온다고 한다. 프레임워크는 제어의 역전이 적용된 좋은 예이다. 개발자가 짠 애플리케이션 코드가 프레임워크에 의해 사용되고, 라이브러리는 개발자가 짠 애플리케이션 코드에서 라이브러리를 사용하는 것이다. 즉 제어하는 쪽이 역전되었다고 할 수 있다.
 
@@ -39,16 +38,12 @@
 
  4. 동적로딩이 가능하다.
     - 자바로 작성된 Application은 여러개의 class로 구성되어 있다. JVM에서는 필요한 Class만 로딩하는데 때문에 사용되지 않은 일부 클래스를 변경하게되면, 전체 어플리케이션을 다시 컴파일 하지 않아도 된다.  
-      
-        
+
+---
+   
 <br>   
 
-
-
-
-
 ## JVM의 메모리 구조
-<br>
 
 ### JVM이란
 - 자바가상머신은 자바로 작성된 프로그램을 실행해주는 플랫폼이다.
@@ -56,7 +51,6 @@
 
 ### JVM의 메모리 구조
 - 자바 버전에 따라 변화가 있지만, 크게 **메소드영역**, **스택영역**, **힙영역*으로 구분할 수 있다.*"  
-
 
 #### 메소드 영역
 - Class Area, Method Area, Static Area 라고도 불린다.
@@ -79,6 +73,7 @@
 - `A a = new A()`라고 객체를 생성했다면 실제 객체는 힙영역에 참조변수인 a와 힙영역의 주소는 스택에 저장된다.
 - **가비지 콜렉터** 더이상 힙영역의 객체가 참조되지 않는다면 힙영역에서 삭제해 주어야한다. 자바를 가비지콜렉터라는 기능으로 자동으로 실행해준다.
 - 효율적인 힙관리를 위해 힙은 여러단개로 구성되어 있다.(가비지 콜렉터와 관련되어 있으므로 가비지 콜렉터에서 더 자세히 설명하도록 힌다.)  
+  
 
 
 ## 가비지 콜렉터  
@@ -91,7 +86,6 @@
 * GC가 작동하게 되면 실행중인 모든 쓰레드가 중지되고, GC 쓰레드만 작동하게 된다. 따라서 GC는 프로그램의 성능과 관련되기 때문에 잘 관리해 주어야 한다.
 
 
-
 ### GC의 기본 동작방식
 
 * **추적 기반 쓰레기 수집**(대표: mark-and-sweep)
@@ -99,10 +93,6 @@
   * 마킹이 안된 곳의 제거 한다
   * 빈 공간을 압축한다
 * 마킹이 끝나고 쓰레드가 작동하면 다시 마킹을 해야하기 때문에, 모든 쓰레드의 동작을 멈춘다. 이를 **stop-the-world**라 한다. 이 경우에 실시간 동작 같은경우 끊기는 현상이 발생하는 등 성능에 좋지 않다. 
-
-
-
-
 
 ![jvm_heap](../src/jvm_heap.jpg)
 
@@ -359,11 +349,11 @@ originalList를 continue 하게 되면, 아래 sortedList를 실행시키지 않
 
 ---
 
-# 알고리즘에서 사용되는 입출력 BufferedReader
+## 알고리즘에서 사용되는 입출력 BufferedReader
 
 - 자바에서 사용되는 입력 받는 방법에 대해서 알아보자. 알고리즘을 풀 때 Scanner를 사용하면 입력이 느린경우가 있다. 최적하를 위해서 어떤 방법이 있는지 알아보자.
 
-## Scanner
+### Scanner
 
 ```java
 Scanner sc = new Scanner( System.in );
@@ -374,7 +364,7 @@ int T = sc.nextInt();
 
 
 
-## BufferedReader
+### BufferedReader
 
 ```java
 BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
@@ -385,7 +375,7 @@ int T = Integer.parseInt( br.readLine());
 
 
 
-## StringTokenizner
+### StringTokenizer
 
  Scanner를 사용하면 nextInt()를 이용해서 공백으로 구분된 int를 가져올 수 있지만 BufferedReader는 불가능 하기 때문에 Tokenizer를 통해서 delimiter를 설정해 주어야 한다.
 
@@ -402,7 +392,7 @@ int N = Integer.parseInt( st.nextToken() );
 
 
 
-## BufferedWriter
+### BufferedWriter
 
  BufferedReader와 비슷하다. System.out.println()과는 다르게 개행되지 않기때문에 개행하고 싶다면 `\n`을 마지막에 넣어주면 된다.
 
@@ -421,7 +411,7 @@ bw.close();
 
 
 
-## 차이점
+### 차이점
 
 1. Scanner의 버퍼크기는 1024 chars이고 BufferReader의 크기는 8192 chars 이다.
 2. BufferedReader는 문자열을 단순히 읽고, Scanner는 구분하는 메소드가 정의 되어 있다.
@@ -439,15 +429,13 @@ bw.close();
 
    
 
-## 성능차이를 알아보자
+### 성능차이를 알아보자
 
 BufferedReader에 매개변수로 들어가는 InpuStreamReader는 문자열을 Chracter 단위(한글자)로 읽어 들어온다. 때문에 긴 문자열을 읽어 들일 때 불편하다.
 
 BufferedReader는 버퍼를 사용하여 이러한 불편함을 제거한다. 요청이 있을때 마다 읽어오는 것이 아니라, 한번에 버퍼에 저장한후 요청이 있으면 버퍼에서 읽어오는 방식이다. 공백도 문자열로 인식하여 받는다.
 
 반면 Scanner는 공백과 줄바꿈을 모두 입력의 경계로 인식한다. 때문에 데이터를 쉽게 입력받을 수 있다.  또한 데이터 타입이 입력 받는 시점에서 결정되기 때문에 Casting이 필요하지 않는다.(함수 사용)
-
-
 
 상황에 맞게 사용하면 되겠다.!
 
@@ -481,3 +469,90 @@ BufferedReader는 버퍼를 사용하여 이러한 불편함을 제거한다. �
 
 ---
 
+## equals() vs hashCode()
+equals()와 hashCode()는 java.lang.Object에 구현되어 있다. 두 메소드 모두 객체의 비교와 관련되어 있지만 논리적으로 같은 객체(값이 같은지), 메모리상의 위치가 같은 객체인지를 구별할때 사용되는 메소드이다.  
+
+### equals()
+ equals()는 논리적인 값이 같은지 확인하는 함수이다. 즉 객체의 멤버변수의 값이 같은지 확인 할 때 사용된다.  
+ 다음은 java.lang.Object의 equals() 메소드이다.
+```java
+public boolean equals(Object obj){
+    return (this == obj);
+}
+```
+ 객체를 `==`로 비교하고 있기 때문에 새로 객체를 만든다면 오버라이드 해줘야 한다.
+ 
+ ```java
+ class People{
+    private int age;
+    private int number;
+    ...
+}
+
+@Test
+public void equalTest(){
+    People p1 = new People( 27, 920511);
+    People p2 = new People( 27, 920511);
+    
+    p1.equals(p2); // false
+}
+ ```
+ People 객체의 두 인스턴스는 논리적으로 같은사람을 의미하지만, 서로 다른 메모리 상에 위치합니다. equals() 메소드를 사용할 경우 같은 값으로 인식해야 하므로 오버라이드 해줘야 합니다.
+ 
+ ```java
+ class People{
+    private int age;
+    private int number;
+    ...
+}
+
+@Override
+public boolean equals(Object obj){
+    
+    if(obj == null){
+        return false;
+    }
+    
+    if(this.getClass() != obj.getClass()){
+        return false;
+    } // 서로 다른 객체이면 논리적인 값도 다르다.
+    
+    if(this == obj){
+        System.out.println("Objec Same");
+        return true; // 메모리의 위치값이 같다면 논리적인 값도 같다.
+    }
+    
+    People that = (People) obj;
+    
+    if(this.age == null && that.name != null){
+        return false;
+    }
+    
+    if( this.age == that.age && this.number == that.number){
+        return true;  // 두 멤버 변수의 값이 같으면 true
+    }
+    
+    return false;
+}  
+
+```   
+특징을 살펴보면 먼저 객체의 논리값을 확인하기전에 객체의 메모리 값을 확인하여 같으면 true를 리턴한다
+주의할 점은 HashSet, HashMap, Hashtable의 컬랙션프레임워크는 객체의 동등 비교시 **hashCode()**메소드를 사용한다는 점이다. 새로 만든 객체가 컬렉션 프레임 워크는 사용한다면 사이드이펙트를 줄이기 위해 hashCode() 또한 오버라이드 해줘야한다. 언제 어떻게 사용할지 모르기 때문에 항상 equalse()와 hashCode()를 함께 오버라이드 해주는 것이 좋다.
+  
+## hashCode()  
+java.lang.object의 hashCode()메소드는 메모리위치를 가지고 해시 주소값을 출력한다. 
+HashSet, HashMap, Hashtable 프레임워크의 두 객체 동등 비교프로세스는 다음과 같다.
+```java
+if : hashCode() == true {
+	if : equals() == true{
+		해쉬 프레임워크는 이제서야 두 객체를 동등하다고 판단한다.
+	}else{
+		다른객체로 판단
+	}
+}else{
+	다른객체로 판단
+}
+```
+참조 - https://blog.hanumoka.net/2018/04/12/java-20180412-java-equals-hashCode/  
+해시코드의 규칙은 같은 객체이면 같은 값을 반환하지만 역은 성립하지 않는 다는 것이다. 이를 지키며 오버라이드 해주면 된다.
+=======
