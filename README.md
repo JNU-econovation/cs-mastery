@@ -72,6 +72,7 @@
 
 * [컴퓨터 네트워크 - 정주홍님](https://brunch.co.kr/@toughrogrammer/16)
 * [프록시 서버란 무엇인가](http://brownbears.tistory.com/191)
+* [SSL/TLS](https://ssup2.github.io/theory_analysis/SSL,TLS/)
 
 
 
@@ -135,6 +136,13 @@
 
 
 
+### 도움되는 자료
+
+* [프록시 패턴](https://blog.naver.com/2feelus/220655183083)
+* [디자인패턴 in 스프링 프레임워크](https://blog.naver.com/2feelus/220736436428)
+
+
+
 
 
 ## Graphics  [공부하러 가기](./Graphics/Graphics.md) 
@@ -170,18 +178,15 @@
 ### 도움되는 자료
 
 * [자바의 새로운 도약: OpenJDK 2018.10.20](http://taewan.kim/post/openjdk/?fbclid=IwAR0YbNB8kau1vhK3rq73dxhTdLWpgtremaqO5DKTtNB1y3xwiY6Gg-PboUw)
-
 * [자바 Heap Space에 관한 내용 - javarevisited](https://javarevisited.blogspot.com/2011/05/java-heap-space-memory-size-jvm.html)
+* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)
+* [final 키워드와 퍼포먼스](http://korprogrammingresearch.blogspot.com/)
+* [자바 가비지 컬렉터](https://free-strings.blogspot.com/2016/02/jvm-garbage-collector.html)
 
-* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)   
-    
-    
----  
-   
-   
-## Spring   [공부하러 가기](./Spring/Spring.md)  
 
 ### 목차
+
+* [ORM, JPA, Hibernate의 차이점](orm,-jpa,-hiberbate의-차이점)
 
 - [스프링 개요](#스프링-개요)
   - [스프링 프레임워크](#스프링-프레임워크)
@@ -201,6 +206,7 @@
 * [Spring REST Doc - 김남윤](https://github.com/cheese10yun/springboot-restdocs?fbclid=IwAR1C2dcAcPnh6HyolKi6JNh1WNiCNa4WW3sDReRBHIL2nL__taOWOeH3NCs)
 * [Custom annotation을 이용한 Signal 처리](http://madfordev.tistory.com/1?fbclid=IwAR2IxGPYlznFrRBrBpALq9u7oMHlqXOihyAE-yZvQ9ZfRVgzuHEdfdsZW-E)
 * [스프링 IoC 설명 (강추)](http://kamang-it.tistory.com/entry/Spring-01IoC?category=712768)
+* [스프링 DI와 생성자 인젝션](http://kamang-it.tistory.com/entry/Spring-02DI%EC%99%80-%EC%83%9D%EC%84%B1%EC%9E%90-%EC%9D%B8%EC%A0%9D%EC%85%98?category=712768)
 
 
 
@@ -209,6 +215,12 @@
 ### 목차
 
 * 
+
+
+
+### 도움되는 자료
+
+* [웹 아키텍쳐 입문](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
 
 
 
@@ -264,14 +276,13 @@
 
 ### 모집중
 
-* [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
-* [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
-
-
+* 
 
 ### 모집완료
 
-*  
+*  [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
+*  [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
+*  [개발자 커리어 티치](https://innovationlab181114seminar.splashthat.com/?fbclid=IwAR2uFDhMU6dHPxROXV45zp4xmCIPtXJ_IaQStpDGpqM8AgVWg7WZ26o3jd4)
 
 
 
@@ -289,10 +300,14 @@
 * [만화로 나누는 자유/오픈소스 소프트웨어 이야기](http://joone.net/2016/11/15/%EC%95%A8%EB%9F%B0-%ED%8A%9C%EB%A7%81%EA%B3%BC-%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C/)
 * [네이버 개발자 wheejuni님 블로그](https://tech.wheejuni.com/)
 * [웹 아키텍쳐 입문 (강추자료)](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
-* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://github.com/milooy/remote-or-flexible-work-company-in-korea?fbclid=IwAR17ubHcKC9LKk7Oy6maI2fyOwGHbICfWLjlybfpN4Wz37X5jLlYm2jGAWk)
+* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://milooy.github.io/remote-or-flexible-work-company-in-korea/?fbclid=IwAR0MWKFP3Kx4Dbe1SIGOMCytppUffHJrJuvdFcwVUYwwilphWwM5FmGwd-w)
 * [신입 개발자 생활백서 - 진유림님](https://www.slideshare.net/jayjin0427/ss-71896768)
-
-
+* [나는 어떻게 개발 공부를 했나, 2편 - 한재엽님](https://medium.com/@Jbee_/%EB%82%98%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EB%B0%9C-%EA%B3%B5%EB%B6%80%EB%A5%BC-%ED%96%88%EB%82%98-2%ED%8E%B8-267a7ee108dc)
+* [NodeJS는 어떻게 동작하는가?](http://sjh836.tistory.com/149?fbclid=IwAR13fEYP2-8GGaY_gzN8div8bJTIwSx5jGGwpQgVjv_knkF6YkPvx6lkeQo)
+* [대학생 벤처 IT 창업 동아리 SOPT의 페이스북](https://www.facebook.com/clubsopt/?eid=ARBAVCICtwddt-huwmxZjPe2b2G32SqYLC56SUztnUjUgIQ20Y1pdk26BdP-7yrMuJboHepPjaZYbnev&timeline_context_item_type=intro_card_work&timeline_context_item_source=100008576712721)
+* [개발자를 위한 인프라 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/?fbclid=IwAR1cGQtBdkEzkEqedrQ1WIykqSYCQPrd-LYCL0BaTzWfbXY0oNkBkCZ45Lo)
+* [학습에 관한 좋은 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html?fbclid=IwAR2s7C6QgmbaBoDnyZDqEwNHe1rncMCDBEsWjmf4yvh94C-i0sqRmiAZHjM)
+* [클린코드 책 요약](https://sungjk.github.io/2017/07/27/clean-code.html?fbclid=IwAR3PFD-p5_qTNnnDCdQgQadoCflFwqtMmXZRzlsMcbhh_Q6NTLwcLANpmWo)
 
 
 
@@ -304,4 +319,5 @@
 # 개발자 면접 질문 리스트
 * [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
 * [면접 관련 라이브 코딩 유튜브 (강추)](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg)
+* [안드로이드 개발자 면접 질문 리스트](https://github.com/BearCola/ForJavaAndAndroidInterview/blob/master/README.md)
 
