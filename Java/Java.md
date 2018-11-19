@@ -441,3 +441,88 @@ BufferedReader는 버퍼를 사용하여 이러한 불편함을 제거한다. �
   
   
 ## equals() vs hashCode()
+equals()와 hashCode()는 java.lang.Object에 구현되어 있다. 두 메소드 모두 객체의 비교와 관련되어 있지만 논리적으로 같은 객체(값이 같은지), 메모리상의 위치가 같은 객체인지를 구별할때 사용되는 메소드이다.  
+
+### equals()
+ equals()는 논리적인 값이 같은지 확인하는 함수이다. 즉 객체의 멤버변수의 값이 같은지 확인 할 때 사용된다.  
+ 다음은 java.lang.Object의 equals() 메소드이다.
+```java
+public boolean equals(Object obj){
+    return (this == obj);
+}
+```
+ 객체를 `==`로 비교하고 있기 때문에 새로 객체를 만든다면 오버라이드 해줘야 한다.
+ 
+ ```java
+ class People{
+    private int age;
+    private int number;
+    ...
+}
+
+@Test
+public void equalTest(){
+    People p1 = new People( 27, 920511);
+    People p2 = new People( 27, 920511);
+    
+    p1.equals(p2); // false
+}
+ ```
+ People 객체의 두 인스턴스는 논리적으로 같은사람을 의미하지만, 서로 다른 메모리 상에 위치합니다. equals() 메소드를 사용할 경우 같은 값으로 인식해야 하므로 오버라이드 해줘야 합니다.
+ 
+ ```java
+ class People{
+    private int age;
+    private int number;
+    ...
+}
+
+@Override
+public boolean equals(Object obj){
+    
+    if(obj == null){
+        return false;
+    }
+    
+    if(this.getClass() != obj.getClass()){
+        return false;
+    } // 서로 다른 객체이면 논리적인 값도 다르다.
+    
+    if(this == obj){
+        System.out.println("Objec Same");
+        return true; // 메모리의 위치값이 같다면 논리적인 값도 같다.
+    }
+    
+    People that = (People) obj;
+    
+    if(this.age == null && that.name != null){
+        return false;
+    }
+    
+    if( this.age == that.age && this.number == that.number){
+        return true;  // 두 멤버 변수의 값이 같으면 true
+    }
+    
+    return false;
+}  
+
+```   
+특징을 살펴보면 먼저 객체의 논리값을 확인하기전에 객체의 메모리 값을 확인하여 같으면 true를 리턴한다
+주의할 점은 HashSet, HashMap, Hashtable의 컬랙션프레임워크는 객체의 동등 비교시 **hashCode()**메소드를 사용한다는 점이다. 새로 만든 객체가 컬렉션 프레임 워크는 사용한다면 사이드이펙트를 줄이기 위해 hashCode() 또한 오버라이드 해줘야한다. 언제 어떻게 사용할지 모르기 때문에 항상 equalse()와 hashCode()를 함께 오버라이드 해주는 것이 좋다.
+  
+## hashCode()  
+java.lang.object의 hashCode()메소드는 메모리위치를 가지고 해시 주소값을 출력한다. 
+HashSet, HashMap, Hashtable 프레임워크의 두 객체 동등 비교프로세스는 다음과 같다.
+```java
+if : hashCode() == true {
+	if : equals() == true{
+		해쉬 프레임워크는 이제서야 두 객체를 동등하다고 판단한다.
+	}else{
+		다른객체로 판단
+	}
+}else{
+	다른객체로 판단
+}
+```
+참조 - https://blog.hanumoka.net/2018/04/12/java-20180412-java-equals-hashCode/  
+해시코드의 규칙은 같은 객체이면 같은 값을 반환하지만 역은 성립하지 않는 다는 것이다. 이를 지키며 오버라이드 해주면 된다.
