@@ -93,8 +93,7 @@
   * 마킹이 안된 곳의 제거 한다
   * 빈 공간을 압축한다
 * 마킹이 끝나고 쓰레드가 작동하면 다시 마킹을 해야하기 때문에, 모든 쓰레드의 동작을 멈춘다. 이를 **stop-the-world**라 한다. 이 경우에 실시간 동작 같은경우 끊기는 현상이 발생하는 등 성능에 좋지 않다. 
-
-![jvm_heap](../src/jvm_heap.jpg)
+![jvm_heap](https://user-images.githubusercontent.com/24218456/48686694-b07df500-ec00-11e8-8332-429781117c39.jpg)
 
 
 
@@ -149,11 +148,7 @@
 
  Parallel GC와 같지만, Old 영역에 대해서 Mark-Summary-Compaction 단계를 거친다. ~~Mark-summary-Compaction의 과정은 찾지 못하였다. 상대적으로 덜 중요한 것이 아닌가 싶다.~~
 
-
-
-
-
-![Cms](../src/GC_Cms.png)
+![gc_cms](https://user-images.githubusercontent.com/24218456/48686693-af4cc800-ec00-11e8-939b-654a0e372a59.png)
 
 
 
