@@ -154,7 +154,9 @@
 * **리스트 정렬**
 * **버블 정렬 In Java**
 * **삽입 정렬 In Java**
-* **알고리즘에서 사용되는 입출력 BufferedReader**  
+* **알고리즘에서 사용되는 입출력 BufferedReader**
+* **equals() vs hashCode()**  
+
   
   
 ## Java DesignPattern [공부하러 가기](./Java/DesignPattern.md)  

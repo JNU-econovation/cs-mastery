@@ -9,7 +9,8 @@
 * [리스트 정렬](#리스트-정렬)
 * [버블 정렬 In Java](#버블-정렬-알고리즘)
 * [삽입 정렬 In Java](#삽입-정렬-알고리즘)
-* [알고리즘에서 사용되는 입출력](#-알고리즘에서-사용되는-입출력-bufferedreader)  
+* [알고리즘에서 사용되는 입출력](#-알고리즘에서-사용되는-입출력-bufferedreader)
+* [equals() vs hashCode()](#equals()_vs_hashcode())  
   
    
 ---
