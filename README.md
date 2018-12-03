@@ -218,6 +218,7 @@
 ### 도움되는 자료
 
 * [웹 아키텍쳐 입문](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
+* [모던 웹 api 디자인패턴](https://blog.feathersjs.com/design-patterns-for-modern-web-apis-1f046635215)
 
 ---
 
