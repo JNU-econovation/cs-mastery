@@ -41,6 +41,7 @@
 * **Brian Kernighan's Algorithm**
   - **Kernighan은 누구인가**
   - **알고리즘 설명**
+* Huffman Coding
 
 
 
@@ -163,11 +164,11 @@
 * [자바 Heap Space에 관한 내용 - javarevisited](https://javarevisited.blogspot.com/2011/05/java-heap-space-memory-size-jvm.html)
 
 * [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)   
+  
     
-    
----  
-   
-   
+---
+
+
 ## Spring   [공부하러 가기](./Spring/Spring.md)  
 
 ### 목차
