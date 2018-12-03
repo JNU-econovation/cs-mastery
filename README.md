@@ -309,7 +309,9 @@
 * [학습에 관한 좋은 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html?fbclid=IwAR2s7C6QgmbaBoDnyZDqEwNHe1rncMCDBEsWjmf4yvh94C-i0sqRmiAZHjM)
 * [클린코드 책 요약](https://sungjk.github.io/2017/07/27/clean-code.html?fbclid=IwAR3PFD-p5_qTNnnDCdQgQadoCflFwqtMmXZRzlsMcbhh_Q6NTLwcLANpmWo)
 * [대용량 서비스 설계](https://www.slideshare.net/charsyam2/how-to-build-massive-service-for-advance?fbclid=IwAR19viYhLNa2h_XACVFR-eJwO1tn-pPfQ3SdZsQNwYNAIeZNatdV1SQkN0Y)
+* [오픈소스와 깃허브 이야기](https://www.hanium.or.kr/portal/referenceHaniumBoard.do)
 
+---
 
 ## IT 관련 뉴스 모음
 
