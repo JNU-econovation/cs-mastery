@@ -39,7 +39,7 @@
 ### 목차
 
 * **Brian Kernighan's Algorithm**
-  - **Kernighan은 누구인가**
+  - **Kernighan**
   - **알고리즘 설명**
 * Huffman Coding
 
@@ -49,7 +49,7 @@
 
 * [정렬알고리즘 정리](https://medium.com/@fiv3star/%EC%A0%95%EB%A0%AC%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-sorting-algorithm-%EC%A0%95%EB%A6%AC-8ca307269dc7)
 
-
+---
 
 ## Data Structure   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Data%20Structure/Data%20structure.md)
 
@@ -58,6 +58,8 @@
 * 
 
 
+
+---
 
 ## Network   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Network/Network.md)
 
@@ -73,50 +75,52 @@
 
 * [컴퓨터 네트워크 - 정주홍님](https://brunch.co.kr/@toughrogrammer/16)
 * [프록시 서버란 무엇인가](http://brownbears.tistory.com/191)
+* [SSL/TLS](https://ssup2.github.io/theory_analysis/SSL,TLS/)
 
-
+---
 
 ## Operating System   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Operating%20System/Operating%20System.md)
 
 ### 목차
 
-* [1장 페이징(Paging)](#1장-페이징)
-  - [메모리 주소 매핑](#메모리-주소-매핑)
-    - [1단계 페이징](#1단계-페이징)
-    - [계층적 페이징](#계층적-페이징)
+* **페이징(Paging)**
+  - **메모리 주소 매핑**
+    - **1단계 페이징**
+    - **계층적 페이징**
+* **교착상태**
 
-
+---
 
 ## Database   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Database/Database.md)
 
 ### 목차
 
-- [1장 데이터베이스 시스템](#1.-데이터베이스-시스템)
-  - [데이터베이스의 특징](#데이터베이스의-특징)
-  - [데이터베이스 시스템 개요](#데이터베이스-시스템-개요)
-    - [데이터베이스 스키마와 상태](#데이터베이스-스키마와-상태)
-    - [데이터베이스 시스템의 구성요소](#데이터베이스-시스템의-구성요소)
-    - [데이터베이스 시스템의 요구사항](#데이터베이스-시스템의-요구사항)
-  - [파일 시스템 방식과 DBMS 방식의 비교](#파일-시스템-방식과-dbms-방식의-비교)
-  - [DBMS 언어](#dbms-언어)
-  - [DBMS 사용자](#dbms-사용자)
-  - [데이터베이스 시스템 아키텍쳐](#데이터베이스-시스템-아키텍쳐)
-    - [클라이언트 서버 데이터베이스 시스템](#클라이언트-서버-데이터베이스-시스템)
-- [2장 관계 데이터 모델과 제약조건](#2장-관계-데이터-모델과-제약조건)
-  - [기본적인 용어](#기본적인-용어)
-  - [스키마와 인스턴스](#스키마와-인스턴스)
-  - [릴레이션의 특성](#릴레이션의-특성)
-  - [릴레이션의 키](#릴레이션의-키)
-  - [무결성 제약조건](#무결성-제약조건)
-  - [무결성 제약조건의 유지](#무결성-제약조건의-유지)
+- **1장 데이터베이스 시스템**
+  - **데이터베이스의 특징**
+  - **데이터베이스 시스템 개요**
+    - **데이터베이스 스키마와 상태**
+    - **데이터베이스 시스템의 구성요소**
+    - **데이터베이스 시스템의 요구사항**
+  - **파일 시스템 방식과 DBMS 방식의 비교**
+  - **DBMS 언어**
+  - **DBMS 사용자**
+  - **데이터베이스 시스템 아키텍쳐**
+    - **클라이언트 서버 데이터베이스 시스템**
+- **2장 관계 데이터 모델과 제약조건**
+  - **기본적인 용어**
+  - **스키마와 인스턴스**
+  - **릴레이션의 특성**
+  - **릴레이션의 키**
+  - **무결성 제약조건**
+  - **무결성 제약조건의 유지**
 
-- [3장 관계 대수와 SQL](#3장-관계-대수와-sql)
-  - [관계 대수](#관계-대수)
-  - [SQL](#sql)
-    - [데이터 정의어](#데이터-정의어)
-    - [제약조건](#제약조건)
-  - [SELECT문](#select문)
-    - [기본적인 SELECT 문](#기본적인-select-문)
+- **3장 관계 대수와 SQL**
+  - **관계 대수**
+  - **SQL**
+    - **데이터 정의어**
+    - **제약조건**
+  - **SELECT문**
+    - **기본적인 SELECT 문**
 
 
 
@@ -126,23 +130,31 @@
 
 
 
-
+---
 
 ## Design Pattern   [공부하러 가기](./Design%20Pattern/Design%20Pattern.md)
 
 ### 목차
 
-- 
+- **빌더패턴**
 
 
 
+### 도움되는 자료
 
+* [프록시 패턴](https://blog.naver.com/2feelus/220655183083)
+* [디자인패턴 in 스프링 프레임워크](https://blog.naver.com/2feelus/220736436428)
+
+---
 
 ## Graphics  [공부하러 가기](./Graphics/Graphics.md) 
 
 ### 목차
-* **빌더패턴**  
-<br>  
+*   
+
+
+
+---
 
 ## Java   [공부하러 가기](./Java/Java.md)
 
@@ -160,29 +172,29 @@
 ### 도움되는 자료
 
 * [자바의 새로운 도약: OpenJDK 2018.10.20](http://taewan.kim/post/openjdk/?fbclid=IwAR0YbNB8kau1vhK3rq73dxhTdLWpgtremaqO5DKTtNB1y3xwiY6Gg-PboUw)
-
 * [자바 Heap Space에 관한 내용 - javarevisited](https://javarevisited.blogspot.com/2011/05/java-heap-space-memory-size-jvm.html)
+* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)
+* [final 키워드와 퍼포먼스](http://korprogrammingresearch.blogspot.com/)
+* [자바 가비지 컬렉터](https://free-strings.blogspot.com/2016/02/jvm-garbage-collector.html)
 
-* [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)   
-  
-    
 ---
 
-
-## Spring   [공부하러 가기](./Spring/Spring.md)  
+## Spring[공부하러 가기](./Spring/Spring.md)  
 
 ### 목차
 
-- [스프링 개요](#스프링-개요)
-  - [스프링 프레임워크](#스프링-프레임워크)
-  - [스프링 프레임워크 모듈](#스프링-프레임워크-모듈)
-  - [스프링 컨테이너](#스프링-컨테이너)
-- [DI](#di)
-  - [About DI](#about-di)
-  - [스프링 DI 설정 방법](#spring-di-setting)
-- [다양한 의존 객체 주입](#다양한-의존-객체-주입)
-  - [생성자를 이용한 의존 객체 주입](#생성자를-이용한-의존-객체-주입)
-  - [Setter를 이용한 의존 객체 주입](#setter를-이용한-의존-객체-주입)
+* **ORM, JPA, Hibernate의 차이점**
+
+- **스프링 개요**
+  - **스프링 프레임워크**
+  - **스프링 프레임워크 모듈**
+  - **스프링 컨테이너**
+- **DI**
+  - **About DI**
+  - **스프링 DI 설정 방법**
+- **다양한 의존 객체 주입**
+  - **생성자를 이용한 의존 객체 주입**
+  - **Setter를 이용한 의존 객체 주입**
 
 
 
@@ -191,8 +203,9 @@
 * [Spring REST Doc - 김남윤](https://github.com/cheese10yun/springboot-restdocs?fbclid=IwAR1C2dcAcPnh6HyolKi6JNh1WNiCNa4WW3sDReRBHIL2nL__taOWOeH3NCs)
 * [Custom annotation을 이용한 Signal 처리](http://madfordev.tistory.com/1?fbclid=IwAR2IxGPYlznFrRBrBpALq9u7oMHlqXOihyAE-yZvQ9ZfRVgzuHEdfdsZW-E)
 * [스프링 IoC 설명 (강추)](http://kamang-it.tistory.com/entry/Spring-01IoC?category=712768)
+* [스프링 DI와 생성자 인젝션](http://kamang-it.tistory.com/entry/Spring-02DI%EC%99%80-%EC%83%9D%EC%84%B1%EC%9E%90-%EC%9D%B8%EC%A0%9D%EC%85%98?category=712768)
 
-
+---
 
 ## Web   [공부하러 가기](./Web/Web.md)
 
@@ -202,6 +215,12 @@
 
 
 
+### 도움되는 자료
+
+* [웹 아키텍쳐 입문](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
+
+---
+
 ## Android   [공부하러 가기](./Android/Android.md)
 
 ### 목차
@@ -210,7 +229,7 @@
 
 
 
-
+---
 
 ## C++   [공부하러 가기](./C++/C++.md)
 
@@ -219,6 +238,8 @@
 * 
 
 
+
+---
 
 ## Unity   [공부하러 가기](./Unity/Unity.md)
 
@@ -254,14 +275,13 @@
 
 ### 모집중
 
-* [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
-* [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
-
-
+* 
 
 ### 모집완료
 
-*  
+*  [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
+*  [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
+*  [개발자 커리어 티치](https://innovationlab181114seminar.splashthat.com/?fbclid=IwAR2uFDhMU6dHPxROXV45zp4xmCIPtXJ_IaQStpDGpqM8AgVWg7WZ26o3jd4)
 
 
 
@@ -279,10 +299,14 @@
 * [만화로 나누는 자유/오픈소스 소프트웨어 이야기](http://joone.net/2016/11/15/%EC%95%A8%EB%9F%B0-%ED%8A%9C%EB%A7%81%EA%B3%BC-%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C/)
 * [네이버 개발자 wheejuni님 블로그](https://tech.wheejuni.com/)
 * [웹 아키텍쳐 입문 (강추자료)](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
-* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://github.com/milooy/remote-or-flexible-work-company-in-korea?fbclid=IwAR17ubHcKC9LKk7Oy6maI2fyOwGHbICfWLjlybfpN4Wz37X5jLlYm2jGAWk)
+* [한국에서 자율 출퇴근 or 원격 근무가 되는 회사 목록](https://milooy.github.io/remote-or-flexible-work-company-in-korea/?fbclid=IwAR0MWKFP3Kx4Dbe1SIGOMCytppUffHJrJuvdFcwVUYwwilphWwM5FmGwd-w)
 * [신입 개발자 생활백서 - 진유림님](https://www.slideshare.net/jayjin0427/ss-71896768)
-
-
+* [나는 어떻게 개발 공부를 했나, 2편 - 한재엽님](https://medium.com/@Jbee_/%EB%82%98%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EA%B0%9C%EB%B0%9C-%EA%B3%B5%EB%B6%80%EB%A5%BC-%ED%96%88%EB%82%98-2%ED%8E%B8-267a7ee108dc)
+* [NodeJS는 어떻게 동작하는가?](http://sjh836.tistory.com/149?fbclid=IwAR13fEYP2-8GGaY_gzN8div8bJTIwSx5jGGwpQgVjv_knkF6YkPvx6lkeQo)
+* [대학생 벤처 IT 창업 동아리 SOPT의 페이스북](https://www.facebook.com/clubsopt/?eid=ARBAVCICtwddt-huwmxZjPe2b2G32SqYLC56SUztnUjUgIQ20Y1pdk26BdP-7yrMuJboHepPjaZYbnev&timeline_context_item_type=intro_card_work&timeline_context_item_source=100008576712721)
+* [개발자를 위한 인프라 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/?fbclid=IwAR1cGQtBdkEzkEqedrQ1WIykqSYCQPrd-LYCL0BaTzWfbXY0oNkBkCZ45Lo)
+* [학습에 관한 좋은 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html?fbclid=IwAR2s7C6QgmbaBoDnyZDqEwNHe1rncMCDBEsWjmf4yvh94C-i0sqRmiAZHjM)
+* [클린코드 책 요약](https://sungjk.github.io/2017/07/27/clean-code.html?fbclid=IwAR3PFD-p5_qTNnnDCdQgQadoCflFwqtMmXZRzlsMcbhh_Q6NTLwcLANpmWo)
 
 
 
@@ -294,4 +318,5 @@
 # 개발자 면접 질문 리스트
 * [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
 * [면접 관련 라이브 코딩 유튜브 (강추)](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg)
+* [안드로이드 개발자 면접 질문 리스트](https://github.com/BearCola/ForJavaAndAndroidInterview/blob/master/README.md)
 
