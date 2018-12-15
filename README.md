@@ -316,6 +316,7 @@
 * [클린코드 책 요약](https://sungjk.github.io/2017/07/27/clean-code.html?fbclid=IwAR3PFD-p5_qTNnnDCdQgQadoCflFwqtMmXZRzlsMcbhh_Q6NTLwcLANpmWo)
 * [대용량 서비스 설계](https://www.slideshare.net/charsyam2/how-to-build-massive-service-for-advance?fbclid=IwAR19viYhLNa2h_XACVFR-eJwO1tn-pPfQ3SdZsQNwYNAIeZNatdV1SQkN0Y)
 * [오픈소스와 깃허브 이야기](https://www.hanium.or.kr/portal/referenceHaniumBoard.do)
+* [카카오헤어샵개발후기](https://brunch.co.kr/@cg4jins/1?fbclid=IwAR3z8kSgvF9ZIrkE9pjV8xaEdK6US7miLmQXx_NuDhrd2HDeTKRnGKwRaV4)
 
 ---
 
