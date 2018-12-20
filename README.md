@@ -219,6 +219,7 @@
 ### 도움되는 자료
 
 * [웹 아키텍쳐 입문](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
+* [모던 웹 api 디자인패턴](https://blog.feathersjs.com/design-patterns-for-modern-web-apis-1f046635215)
 
 ---
 
@@ -313,8 +314,11 @@
 * [개발자를 위한 인프라 총정리](https://futurecreator.github.io/2018/11/09/it-infrastructure-basics/?fbclid=IwAR1cGQtBdkEzkEqedrQ1WIykqSYCQPrd-LYCL0BaTzWfbXY0oNkBkCZ45Lo)
 * [학습에 관한 좋은 이야기](http://woowabros.github.io/experience/2017/12/11/how-to-study.html?fbclid=IwAR2s7C6QgmbaBoDnyZDqEwNHe1rncMCDBEsWjmf4yvh94C-i0sqRmiAZHjM)
 * [클린코드 책 요약](https://sungjk.github.io/2017/07/27/clean-code.html?fbclid=IwAR3PFD-p5_qTNnnDCdQgQadoCflFwqtMmXZRzlsMcbhh_Q6NTLwcLANpmWo)
+* [대용량 서비스 설계](https://www.slideshare.net/charsyam2/how-to-build-massive-service-for-advance?fbclid=IwAR19viYhLNa2h_XACVFR-eJwO1tn-pPfQ3SdZsQNwYNAIeZNatdV1SQkN0Y)
+* [오픈소스와 깃허브 이야기](https://www.hanium.or.kr/portal/referenceHaniumBoard.do)
+* [카카오헤어샵개발후기](https://brunch.co.kr/@cg4jins/1?fbclid=IwAR3z8kSgvF9ZIrkE9pjV8xaEdK6US7miLmQXx_NuDhrd2HDeTKRnGKwRaV4)
 
-
+---
 
 ## IT 관련 뉴스 모음
 
