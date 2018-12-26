@@ -171,7 +171,10 @@
 * [프록시 패턴](https://blog.naver.com/2feelus/220655183083)
 * [디자인패턴 in 스프링 프레임워크](https://blog.naver.com/2feelus/220736436428)
 
+ 
 ---
+<br>
+<br>
 
 ## Graphics  [공부하러 가기](./Graphics/Graphics.md) 
 
@@ -194,7 +197,6 @@
 * **삽입 정렬 In Java**
 * **알고리즘에서 사용되는 입출력 BufferedReader**
 * **equals() vs hashCode()**  
-<br>
 
 ### 도움되는 자료
 
