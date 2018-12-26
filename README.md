@@ -4,7 +4,10 @@
 >
 > 타인에게 공유하고 싶은 지식들이 있으면 자유롭게 저장소에 추가해주세요.
 >
-> **"지식은 나눌수록 자신의 것이 됩니다."**
+> **"지식은 나눌수록 자신의 것이 됩니다."**  
+
+<br>
+<br>
 
 ### 사용 방법
 
@@ -33,7 +36,12 @@
 
 *위 내용이 어렵거나 설명이 필요하신분은 고민하지말고 **이혁진**에게 바로 연락주시기 바랍니다*.
 
+ 
 ---
+
+<br>
+<br>
+
 ## Algorithm   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Algorithm/Algorithm.md)
 
 ### 목차
@@ -46,12 +54,14 @@
 * Huffman Coding
 
 
-
 ### 도움되는 자료
 
 * [정렬알고리즘 정리](https://medium.com/@fiv3star/%EC%A0%95%EB%A0%AC%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-sorting-algorithm-%EC%A0%95%EB%A6%AC-8ca307269dc7)
-
+  
+  
 ---
+<br>
+<br>
 
 ## Data Structure   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Data%20Structure/Data%20structure.md)
 
@@ -60,8 +70,10 @@
 * 
 
 
-
+  
 ---
+<br>
+<br>
 
 ## Network   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Network/Network.md)
 
@@ -78,8 +90,11 @@
 * [컴퓨터 네트워크 - 정주홍님](https://brunch.co.kr/@toughrogrammer/16)
 * [프록시 서버란 무엇인가](http://brownbears.tistory.com/191)
 * [SSL/TLS](https://ssup2.github.io/theory_analysis/SSL,TLS/)
-
+  
+  
 ---
+<br>
+<br>
 
 ## Operating System   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Operating%20System/Operating%20System.md)
 
@@ -94,8 +109,11 @@
     - **계층적 페이징**
 * **세그먼테이션**
 * **교착상태**
-
+  
+  
 ---
+<br>
+<br>
 
 ## Database   [공부하러 가기](https://github.com/JNU-econovation/cs-mastery/blob/master/Database/Database.md)
 
@@ -135,8 +153,10 @@
 * [Join과 그에 따른 Slow Query](http://blog.bsmind.co.kr/84)
 
 
-
+  
 ---
+<br>
+<br>
 
 ## Design Pattern   [공부하러 가기](./Design%20Pattern/Design%20Pattern.md)
 
@@ -151,19 +171,23 @@
 * [프록시 패턴](https://blog.naver.com/2feelus/220655183083)
 * [디자인패턴 in 스프링 프레임워크](https://blog.naver.com/2feelus/220736436428)
 
+ 
 ---
+<br>
+<br>
 
 ## Graphics  [공부하러 가기](./Graphics/Graphics.md) 
 
 ### 목차
 *   
-
-
-
+  
+  
 ---
+<br>
+<br>
 
 ## Java   [공부하러 가기](./Java/Java.md)
-
+  
 ### 목차
 
 * **JVM의 메모리 구조**
@@ -173,7 +197,6 @@
 * **삽입 정렬 In Java**
 * **알고리즘에서 사용되는 입출력 BufferedReader**
 * **equals() vs hashCode()**  
-<br>
 
 ### 도움되는 자료
 
@@ -181,9 +204,12 @@
 * [자바 Heap Space에 관한 내용 - javarevisited](https://javarevisited.blogspot.com/2011/05/java-heap-space-memory-size-jvm.html)
 * [자바 GC에 관한 인터뷰 질문 10가지 - javarevisited](https://javarevisited.blogspot.com/2012/10/10-garbage-collection-interview-question-answer.html)
 * [final 키워드와 퍼포먼스](http://korprogrammingresearch.blogspot.com/)
-* [자바 가비지 컬렉터](https://free-strings.blogspot.com/2016/02/jvm-garbage-collector.html)
-
+* [자바 가비지 컬렉터](https://free-strings.blogspot.com/2016/02/jvm-garbage-collector.html)  
+  
+  
 ---
+<br>
+<br>
 
 ## Spring[공부하러 가기](./Spring/Spring.md)  
 
@@ -210,8 +236,11 @@
 * [Custom annotation을 이용한 Signal 처리](http://madfordev.tistory.com/1?fbclid=IwAR2IxGPYlznFrRBrBpALq9u7oMHlqXOihyAE-yZvQ9ZfRVgzuHEdfdsZW-E)
 * [스프링 IoC 설명 (강추)](http://kamang-it.tistory.com/entry/Spring-01IoC?category=712768)
 * [스프링 DI와 생성자 인젝션](http://kamang-it.tistory.com/entry/Spring-02DI%EC%99%80-%EC%83%9D%EC%84%B1%EC%9E%90-%EC%9D%B8%EC%A0%9D%EC%85%98?category=712768)
-
+  
+  
 ---
+<br>
+<br>
 
 ## Web   [공부하러 가기](./Web/Web.md)
 
@@ -225,18 +254,22 @@
 
 * [웹 아키텍쳐 입문](https://rhostem.github.io/posts/2018-07-22-web-architecture-101/)
 * [모던 웹 api 디자인패턴](https://blog.feathersjs.com/design-patterns-for-modern-web-apis-1f046635215)
-
+  
+  
 ---
+<br>
+<br>
 
 ## Android   [공부하러 가기](./Android/Android.md)
 
 ### 목차
 
 - 
-
-
-
+  
+  
 ---
+<br>
+<br>
 
 ## C++   [공부하러 가기](./C++/C++.md)
 
@@ -244,28 +277,33 @@
 
 * 
 
-
-
+  
 ---
+<br>
+<br>
 
 ## Unity   [공부하러 가기](./Unity/Unity.md)
 
 ### 목차
 
 * 
-
-
-
-
-
+  
+  
 ---
+<br>
+<br>
+
+
 ## Git [공부하러가기](./Git/Git.md)  
 
 ### 목차
 
 * Stash
-
+  
+  
 ---
+<br>
+<br>
 
 # IT 관련 채용
 
@@ -278,10 +316,11 @@
 ### 모집완료
 
 * 
-
-
-
+  
+  
 ---
+<br>
+<br>  
 
 # IT 관련 행사
 
@@ -294,14 +333,11 @@
 *  [Study Circle Lead Camp - 스터디 내용 공유 및 인맥 쌓기](https://studycircleleadcamp.splashthat.com/?fbclid=IwAR38I-snQ5-f3g53PTEt6weu0ZU-Suv0Qi9A4qbEMGWUeWFPbPmeKPi3-W8)
 *  [개발자, 한 달에 책 한 권 읽기](https://www.facebook.com/events/490833408090200/)
 *  [개발자 커리어 티치](https://innovationlab181114seminar.splashthat.com/?fbclid=IwAR2uFDhMU6dHPxROXV45zp4xmCIPtXJ_IaQStpDGpqM8AgVWg7WZ26o3jd4)
-
-
-
-
-
-
-
+  
+  
 ---
+<br>
+<br>
 
 # 기타 유용한 링크들
 
@@ -322,14 +358,23 @@
 * [대용량 서비스 설계](https://www.slideshare.net/charsyam2/how-to-build-massive-service-for-advance?fbclid=IwAR19viYhLNa2h_XACVFR-eJwO1tn-pPfQ3SdZsQNwYNAIeZNatdV1SQkN0Y)
 * [오픈소스와 깃허브 이야기](https://www.hanium.or.kr/portal/referenceHaniumBoard.do)
 * [카카오헤어샵개발후기](https://brunch.co.kr/@cg4jins/1?fbclid=IwAR3z8kSgvF9ZIrkE9pjV8xaEdK6US7miLmQXx_NuDhrd2HDeTKRnGKwRaV4)
-
+  
+  
 ---
+<br>
+<br>
+
 
 ## IT 관련 뉴스 모음
 
 * [국감장에서 경쟁 어려움 호소한 이해진](https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&oid=277&aid=0004343171&sid1=001&fbclid=IwAR0XTV9J4HoFu4dMvsWnbQ6ANYeHSbv8xWNARICx5mXY6j5vhAX4rOZjmk4)
-
+  
+  
 ---
+<br>
+<br>
+
+
 # 개발자 면접 질문 리스트
 * [개발자 면접 질문 리스트](./DeveloperInterviewQuestion.md)
 * [면접 관련 라이브 코딩 유튜브 (강추)](https://www.youtube.com/channel/UCW4ixpFivk6eJl8b5bFOLkg)
