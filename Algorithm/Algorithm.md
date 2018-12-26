@@ -69,7 +69,7 @@
 
  아직 SPT에 포함되지 않은 정점을 선택한다. 정점 `6`이 선택된다. (sptSet{0,1,7,6}). 정점 `6`과 인접한 정점의 거리를 업데이트한다. 정점 `5`와 `8`이 갱신된다.
 
-![](E:\AndroidStudioProjects\mustardcoupon\DIJ4.jpg)
+![](https://www.geeksforgeeks.org/wp-content/uploads/DIJ4.jpg)
 
 모든 정점이 sptSet에 포함될때 까지 위의 과정을 반복한다. 결과적으로 다음과 같은 SPT를 얻을 수 있다.
 
