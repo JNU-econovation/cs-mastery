@@ -20,11 +20,11 @@
 > - 하나의 정점에서 모든 정점까지의 최단거리 - 다익스트라
 > - 음의 값이 있을때 하나의 정점에서 모든 정점까지의 최단거리 - 벨만포드
 > - 모든 정점간의 최단거리 - 플루이드
-
+<br>
 
 ### 다익스트라 최단거리 알고리즘
 
-[geeksforgeeks - Dijkstras shortest path algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)
+[geeksforgeeks - Dijkstras shortest path algorithm](https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/)를 번역한 자료입니다.
 
 
 
@@ -33,7 +33,6 @@
  다익스트라의 알고리즘은 프림의 최단 신장트리 알고리즘과 닮았다. 프림의 최단 스패닝트리(Minimum spanning tree - MST)처럼, 주어진 시작점을 루투로 하여 최단 길이 트리(Shortest path tree-SPT)를 만들 것이다. 알고리즘의 모든 스탭에서 소스로부터 가장짧으면서 아직 포함되지 않은 set에 있는 정점을 찾을 것이다.
 
  다음은 다익스트라 알고리즘에서 가장 짧은 길을 찾기위한 자세한 step이다. 
-
 
 
 #### 알고리즘
@@ -60,11 +59,9 @@
 
 ![](https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg)
 
-다음으로 아직 SPT에 포함되지 않은 정점중 거리가 가장 짧은 정점을 선택한다. 정점 `1`이 선택되고 sptSet에 포함한다. 이제 sptSet은 {0,1}이 된다. 다시 정점 `1`에 인접한 정점의 거리를 갱신한다. 정점 `2`의 거리 값이 12가 된다.
+ 다음으로 아직 SPT에 포함되지 않은 정점중 거리가 가장 짧은 정점을 선택한다. 정점 `1`이 선택되고 sptSet에 포함한다. 이제 sptSet은 {0,1}이 된다. 다시 정점 `1`에 인접한 정점의 거리를 갱신한다. 정점 `2`의 거리 값이 12가 된다.
 
 ![img](https://www.geeksforgeeks.org/wp-content/uploads/DIJ2.jpg)
-
-
 
  다시 가장 짧은 거리값을 가진 정점을 선택한다. 정점 `7`이 선택된다. 이제 sptSet은 {0,1,7}이 된다. 다시 7과 인점한 정점의 거리를 갱신한다. 정점 `6`과 `8`이 갱신된다.
 
@@ -77,8 +74,7 @@
 모든 정점이 sptSet에 포함될때 까지 위의 과정을 반복한다. 결과적으로 다음과 같은 SPT를 얻을 수 있다.
 
 ![img](https://www.geeksforgeeks.org/wp-content/uploads/DIJ5.jpg)
-
-
+<br>
 
 #### 특징
 
@@ -132,18 +128,14 @@ public int countSetBits (int n) {
 ***결과적으로 2진수로 표현된 숫자의 1 갯수를 쉽게 반환할 수 있다.***
 
 
-
+ 
 ---
-
-
-
-
+<br>
+<br>
 
 # Huffman coding(허프만 부호화)
 
  허프만 부호화는 글이나 사진 압축에 사용되는 알고리즘이다. 글자의 빈도수에 따라 치환되는 코드가 달라진다. 알고리즘 분류상 그리디 알고리즘(탐욕)에 포함된다.
-
-
 
 ## 1. 특징
 
@@ -153,8 +145,6 @@ public int countSetBits (int n) {
 - 치환된 코드는 다른 글자의 접두코드로 사용될 수 없다.( 접두 부호 - prefix )  
 
 문자의 빈도수에 따라 코드를 치환하기 위해서 허프만 부호화는 리프노드를 제외한 모든 노드가 두개의 자식을 가지는 정이진 트리를 생성한다. 정이진트리에서 리프노드가 나올때까지 왼쪽은 `0` 오른쪽은 `1`을 추가하며 노드를 따라 내려간다. 허프만 코드의 알고리즘은 해당하는 정이진트리를 찾는 과정이다.
-
-
 
 ## 2. 알고리즘
 
@@ -166,8 +156,7 @@ public int countSetBits (int n) {
 4. 허프만 트리에서 좌측 자식으로 내려갈때는 0을 우측 자식으로 내려갈때는 1을 더해 나간다.
 
 이렇게 완성된 코드를 허프만 코드라 합니다.
-
-
-
+ 
 ---
+
 
