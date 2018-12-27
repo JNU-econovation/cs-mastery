@@ -3,7 +3,8 @@
 ### 목차
 
 - [그래프](#그래프)
-  - [다익스트라 최단거리 알고리즘](#다익스트라_최단거리_알고리즘)
+  - [다익스트라 최단거리 알고리즘](#다익스트라-최단거리-알고리즘)
+  - [플루이드와샬 최단거리 알고리즘](#플루이드-와샬-최단거리-알고리즘)
 - [Brian Kernighan's Algorithm](#brian-kernighan's-algorithm)
   - [Kernighan은 누구인가](#brian-kernighan's-algorithm은-누구인가?)
   - [알고리즘 설명](#brian-kernighan's-알고리즘이란?)
@@ -53,27 +54,27 @@
 
 다음 예제를 이해해 보자.
 
-![](https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg)
+![dijkstra-1](https://www.geeksforgeeks.org/wp-content/uploads/Fig-11.jpg)
 
  sptSet은 비어있으며, 모든 정점에 무한대 값을 할당한다. {0, INF, INF, INF, INF, INF, INF, INF, INF}(정점 0은 시작점이고, INF는 무한대를 의미한다.) 다음으로 가장작은 거리값을 가진 정점을 선택한다. 정점 `0`이 선택되면 이를 sptSet에 넣는다. 이제 sptSet은 {0}이 된다. 점점 `0`을 sptSet에 포함 시킨 후, `0`에 인점한 정점들의 거리를 갱신한다. `0`에 인접한 정점은 `1`과 `7`이다. 각각의 정점의 거리는 '4'와 '8'로 갱신된다. 다음의 서브그래프는 거리가 결정된 정점과 그 거리 값을 보여준다. SPT에 포함된 정점은 초록색으로 보여진다.
 
-![](https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg)
+![dijkstra-2](https://www.geeksforgeeks.org/wp-content/uploads/MST1.jpg)
 
  다음으로 아직 SPT에 포함되지 않은 정점중 거리가 가장 짧은 정점을 선택한다. 정점 `1`이 선택되고 sptSet에 포함한다. 이제 sptSet은 {0,1}이 된다. 다시 정점 `1`에 인접한 정점의 거리를 갱신한다. 정점 `2`의 거리 값이 12가 된다.
 
-![img](https://www.geeksforgeeks.org/wp-content/uploads/DIJ2.jpg)
+![dijkstra-3](https://www.geeksforgeeks.org/wp-content/uploads/DIJ2.jpg)
 
  다시 가장 짧은 거리값을 가진 정점을 선택한다. 정점 `7`이 선택된다. 이제 sptSet은 {0,1,7}이 된다. 다시 7과 인점한 정점의 거리를 갱신한다. 정점 `6`과 `8`이 갱신된다.
 
-![](https://www.geeksforgeeks.org/wp-content/uploads/DIJ3.jpg)
+![dijkstra-4](https://www.geeksforgeeks.org/wp-content/uploads/DIJ3.jpg)
 
  아직 SPT에 포함되지 않은 정점을 선택한다. 정점 `6`이 선택된다. (sptSet{0,1,7,6}). 정점 `6`과 인접한 정점의 거리를 업데이트한다. 정점 `5`와 `8`이 갱신된다.
 
-![](https://www.geeksforgeeks.org/wp-content/uploads/DIJ4.jpg)
+![dijkstra-5](https://www.geeksforgeeks.org/wp-content/uploads/DIJ4.jpg)
 
 모든 정점이 sptSet에 포함될때 까지 위의 과정을 반복한다. 결과적으로 다음과 같은 SPT를 얻을 수 있다.
 
-![img](https://www.geeksforgeeks.org/wp-content/uploads/DIJ5.jpg)
+![dijkstra-6](https://www.geeksforgeeks.org/wp-content/uploads/DIJ5.jpg)
 <br>
 
 #### 특징
@@ -87,6 +88,216 @@
 ------  
 <br>
 <br>
+
+### 플루이드 와샬 최단거리 알고리즘  
+
+GeeksforGeeks의 [Floyd Warshall Algorithm | DP-16](https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/)를 번역한 글입니다.
+
+> 플루이드 와샬은 모든 쌍의 최단거리를 구하는 문제이다. 주어진 가중치가 있는 방향 간선에서 모든 정점 사이의 최단거리를 해결하는 문제이다.
+
+
+
+첫번째로 그래프 메트릭스와 같은 솔루션 메트릭스를 초기화 한다. 그 다음 모든 정점을 중간 정점으로 고려하면서 솔루션 메트릭스를 갱신할 것이다. 이 알고리즘의 아이디어는 모든 정점을 하나하나 선택하여 모든 최단거리를 갱신하는 것인데, 선택된 정점을 중간 정점으로 포함하는 것이다. 정점 `K`를 중간 정점으로 선택한다면, 이미 {1,2,3, ... k-1}의 정점들은 중간 정점으로 구려된 후이다. 모든 정점의 쌍 (i, j)을 시작점과 끝점으로 여긴다면, 두가지 가능성이 있다.
+
+1) `K`는 최단거리 (i, j)의 중간 정점이 아니기 때문에 dist'\[i][j]'를 그대로 유지한다. (dist 배열은 솔루션 메트릭스이다.)
+
+2) `K`가 최단거리 (i, j)의 중간 정점에 포함된다. 때문에 만얃ㄱ dist\[i][j]의 값이 dist\[i][k] + dist\[k][j] 값보다 크다면 dist\[i][j]의 값을 dist\[i][k] + dist\[k][j] 로 갱신해야한다.
+
+ 다음의 그림은 위의 설명을 보여준다.
+
+![플루이드 와샬](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/dpFloyd-Warshall-.jpg)
+
+
+
+```java
+class AllPairShortestPath 
+{ 
+    final static int INF = 99999, V = 4; 
+  
+    void floydWarshall(int graph[][]) 
+    { 
+        int dist[][] = new int[V][V]; 
+        int i, j, k; 
+  
+        /* Initialize the solution matrix same as input graph matrix. 
+           Or we can say the initial values of shortest distances 
+           are based on shortest paths considering no intermediate 
+           vertex. */
+        for (i = 0; i < V; i++) 
+            for (j = 0; j < V; j++) 
+                dist[i][j] = graph[i][j]; 
+  
+        /* Add all vertices one by one to the set of intermediate 
+           vertices. 
+          ---> Before start of an iteration, we have shortest 
+               distances between all pairs of vertices such that 
+               the shortest distances consider only the vertices in 
+               set {0, 1, 2, .. k-1} as intermediate vertices. 
+          ----> After the end of an iteration, vertex no. k is added 
+                to the set of intermediate vertices and the set 
+                becomes {0, 1, 2, .. k} */
+        for (k = 0; k < V; k++) 
+        { 
+            // Pick all vertices as source one by one 
+            for (i = 0; i < V; i++) 
+            { 
+                // Pick all vertices as destination for the 
+                // above picked source 
+                for (j = 0; j < V; j++) 
+                { 
+                    // If vertex k is on the shortest path from 
+                    // i to j, then update the value of dist[i][j] 
+                    if (dist[i][k] + dist[k][j] < dist[i][j]) 
+                        dist[i][j] = dist[i][k] + dist[k][j]; 
+                } 
+            } 
+        } 
+    } 
+}
+```
+
+
+
+#### 특징
+
+-  DP 문제 중 하나이다.
+- 3중 포문으로 문제를 해결해야하기 때문에 시간복잡도는 O(V^3)이다. 때문에 정점의 개수가 많다면 다익스트라의 최단거리 알고리즘을 여러번 사용하여 문제를 해결하는 것이 좋다.
+- 다익스트라보다 시간이 많이 걸리지만 한번에 모든 정점의 최단거리를 구할 수 있는 장점이 있다.
+- 문제에 따라 무방향그래프를 활용할 수도 있으며, 초기값 설정, 자기 자신( i == j )의 초기값 등을 잘 생각해야한다.
+
+ 
+---
+<br>
+<br>
+
+### 벨만포드 알고리즘
+
+이 글은 GeeksforGeeks의 [Bellman–Ford Algorithm | DP-23](https://www.geeksforgeeks.org/bellman-ford-algorithm-dp-23/)를 번역한 글입니다.
+
+ 그래프와 그래프의 source 정점 src를 고려하여, src부터 모든 정점의 최단거리를 구하는 알고리즘이다. 다익스트라와 차이점은 그래프의 간선이 음의 값을 가질 수 있다는 점이다. 최단 거리문제는 다익스트라를 활용하여 해결할 수 있다. 다익스트라 알고리즘은 그리디 알고리즘 이며 피보나치 힙을 사용한다면 O(VlogV)의 시간 복잡도를 가졌다. 하지만 다익스트라는 음의 값을 가진 그래프에서는 사용할 수 없으며, 벨만포드를 사용하여야 한다. 벨만포드는 다익스트라보다 간단하며 분산 시스템에 잘 맞다. 하지만 시간 복잡도는 O(VE)로 다익스트라보다 복잡하다.
+
+
+
+#### 알고리즘
+
+Input : 그래프와 source 정점 src
+
+Output : src로 부터 모든 정점의 최단거리. 만약 음의 사이클이 존재한다면 최단거리는 계산되지 않고, 음의 사이클을 찾아낸다.
+
+```
+1) 첫번째로 src로 부터 모든 정점의 거리를 무한대로 초기화 한다. 그리고 src의 거리는 0으로 초기화 한다.  정점의 개수만큼의 dist[] 배열을 만든다.
+
+2) 다음으로 최단거리를 계산한다. |V|-1 번 만큼 아래 단계를 반복한다.
+
+	a)  dist[v] > dist[u] + 간선 uv의 가중치 라면 dist[v]를 dist[u]+ 간선 uv의 가중치로 갱신한다.
+
+3) 만약 음의 사이클이 존재한다면 다음 과 같은 상황이 발생한다.
+```
+
+ 만약 ( dist[v] > dist[u] + 간선 uv의 가중치 )라면, 음의 가중치가 존재하는 것이다. step3의 아이디어는 step2가 음의 가중치를 포함하지 않으면 가장 짧다는 것을 보장한다. 만약 모든 간선에 대하여 한번더 반복하여 더 짧은 최단거리를 얻는다면, 음의 사이클이 존재한다는 것이다.
+
+**어떻게 동작하는가?** 다른 다이나믹 프로그래밍 문제들 처럼, 이 알고리즘은 문제를 **바텀업(Bottom-up)의 방법**으로 해결한다.  첫번째 탐색에서 간선이 최대 하나 포함된 최단거리가 구해진다. 다음으로 최대 2개의 간선이 포함된 최단거리가 구해지는데 그래서 i q번째 반복 이후에 최대 i개의 간선이 포함된 최단 거리가 구해진다. 이 그래프에는 최대 |V|-1개의 단순 경로가 있을 수 있기 때문에 |V|-1번 반복된다. 이 아이디어는 음의 경로가 없음을 가정한다. 만약 i번 이상의 최단경로가 구해진다면 모든 경로는 최대 (i+1)개의 간선이 포함된 최단경로임을 보장하게 된다. 
+
+
+
+#### 예제
+
+다음의 예제와 함께 알고리즘을 이해해보자. 
+
+모든 정점까지의 거리를 무한대로 초기화하고 시작 정점 src의 거리를 0으로 초기화 한다. 이 그래프에서 간선의 개수는 5개이며 모든 과정은 4번만 이루어 저야한다.
+
+![벨만포드1](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/bellmanford1.png)
+
+다음 순서로 진행한다. (B,E), (D,B), (B,D), (A,B), (A,C), (D,C), (B,C), (E,D). 위의 첫번째 과정을 거치고 나면 다음과 같은 거리값이 구해진다. 두번째 줄은 (B,E), (D,B), (B,D)와 (A,B)의 과정이 진행한 거리 값을 보여준다.
+
+![벨만포드2](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/bellmanford2.png)
+
+첫번째 반복은 최단거리가 1개이상의 간선을 포함함을 보장한다. 두번째 반복이 이루어지만 다음과 같은 거리가 구해진다. (마지막 줄이 2번째 반복의 최종결과 값이다.)
+
+![벨만포드3](https://cdncontribute.geeksforgeeks.org/wp-content/uploads/bellmanford3.png)
+
+두번째 반복은 모든 최단거리가 최대 2개의 간선을 포함함을 보장한다. 모든 과정은 간선을 2번이상 처리한다. 거리는 두번째 반복 후에 최소화되므로 세번째 및 네번째 반복은 거리를 업데이트하지 않는다. 
+
+
+
+#### 자바소스
+
+```java
+class Graph 
+{ 
+    // A class to represent a weighted edge in graph 
+    class Edge { 
+        int src, dest, weight; 
+        Edge() { 
+            src = dest = weight = 0; 
+        } 
+    }; 
+  
+    int V, E; 
+    Edge edge[]; 
+  
+    // Creates a graph with V vertices and E edges 
+    Graph(int v, int e) 
+    { 
+        V = v; 
+        E = e; 
+        edge = new Edge[e]; 
+        for (int i=0; i<e; ++i) 
+            edge[i] = new Edge(); 
+    } 
+  
+    // The main function that finds shortest distances from src 
+    // to all other vertices using Bellman-Ford algorithm.  The 
+    // function also detects negative weight cycle 
+    void BellmanFord(Graph graph,int src) 
+    { 
+        int V = graph.V, E = graph.E; 
+        int dist[] = new int[V]; 
+  
+        // Step 1: Initialize distances from src to all other 
+        // vertices as INFINITE 
+        for (int i=0; i<V; ++i) 
+            dist[i] = Integer.MAX_VALUE; 
+        dist[src] = 0; 
+  
+        // Step 2: Relax all edges |V| - 1 times. A simple 
+        // shortest path from src to any other vertex can 
+        // have at-most |V| - 1 edges 
+        for (int i=1; i<V; ++i) 
+        { 
+            for (int j=0; j<E; ++j) 
+            { 
+                int u = graph.edge[j].src; 
+                int v = graph.edge[j].dest; 
+                int weight = graph.edge[j].weight; 
+                if (dist[u]!=Integer.MAX_VALUE && 
+                    dist[u]+weight<dist[v]) 
+                    dist[v]=dist[u]+weight; 
+            } 
+        } 
+  
+        // Step 3: check for negative-weight cycles.  The above 
+        // step guarantees shortest distances if graph doesn't 
+        // contain negative weight cycle. If we get a shorter 
+        //  path, then there is a cycle. 
+        for (int j=0; j<E; ++j) 
+        { 
+            int u = graph.edge[j].src; 
+            int v = graph.edge[j].dest; 
+            int weight = graph.edge[j].weight; 
+            if (dist[u] != Integer.MAX_VALUE && 
+                dist[u]+weight < dist[v]) 
+              System.out.println("Graph contains negative weight cycle"); 
+        } 
+    }
+}
+```
+
+ 
+ ---
+ <br>
+ <br>
+
 
 ## Brian Kernighan's Algorithm
 
