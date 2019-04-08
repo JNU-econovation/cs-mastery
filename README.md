@@ -343,7 +343,7 @@
 
 # 기타 유용한 링크들
 
-* [네이버 개발자 madplay님 블로그](https://blog.naver.com/madplay)
+* [네이버 개발자 madplay님 블로그](https://madplay.github.io)
 * [네이버 개발자 occidere님 블로그](https://blog.naver.com/occidere)
 * [God of Java님의 블로그](http://www.tuning-java.com/)
 * [만화로 나누는 자유/오픈소스 소프트웨어 이야기](http://joone.net/2016/11/15/%EC%95%A8%EB%9F%B0-%ED%8A%9C%EB%A7%81%EA%B3%BC-%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C/)
